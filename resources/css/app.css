@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 @import 'tailwindcss';
+@import './components/about-section.css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
-@source "../**/*.blade.php";
-@source "../**/*.js";
-@source "../**/*.vue";
+@source '../views/**/*.blade.php';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'IBM Plex Sans Thai', 'Prompt', 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* 100% Reliable Product Image Zoom Effect (Hover, Touch, Tap) */
+.product-card-zoom {
+    transition: transform 0.3s ease-out !important;
+    transform-origin: center center;
+}
+
+.group:hover .product-card-zoom,
+.group:active .product-card-zoom,
+.group:focus .product-card-zoom {
+    transform: scale(1.10) !important;
 }
