@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้าทั้งหมด | Product Listing</title>
+    <meta name="description" content="ค้นหาและกรองสินค้าสายคล้องคอและอุปกรณ์เสริม">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --primary:        #004998;
+            --primary-hover:  #003a7a;
+            --primary-light:  #EBF2FF;
+            --accent:         #E53935;
+            --bg:             #F2F4F8;
+            --white:          #FFFFFF;
+            --border:         #E4E8EE;
+            --border-light:   #F2F2F2;
+            --text:           #111827;
+            --text-muted:     #6B7280;
+            --text-light:     #9CA3AF;
+            --shadow-xs:      0 1px 2px rgba(0,0,0,0.05);
+            --shadow-sm:      0 1px 8px rgba(0,0,0,0.07);
+            --shadow-md:      0 4px 20px rgba(0,0,0,0.09);
+            --shadow-lg:      0 10px 40px rgba(0,73,152,0.12);
+            --radius:         18px;
+            --radius-sm:      10px;
+            --radius-xs:      6px;
+            --ease:           cubic-bezier(0.4, 0, 0.2, 1);
+            --transition:     all 0.25s var(--ease);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Sarabun', 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* TOP STICKY FILTER BAR */
+        #topFilterBar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-110%);
+            transition: transform 0.35s var(--ease);
+            padding: 10px 32px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        #topFilterBar.visible {
+            transform: translateY(0);
+        }
+
+        .top-bar-brand {
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.3px;
+            white-space: nowrap;
+            padding-right: 14px;
+            margin-right: 4px;
+            border-right: 1px solid var(--border);
+        }
+
+        .top-divider {
+            width: 1px;
+            height: 22px;
+            background: var(--border);
+            flex-shrink: 0;
+        }
+
+        .top-filter-group {
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .top-filter-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 6px 14px;
+            border: 1.5px solid var(--border);
+            border-radius: 100px;
+            background: var(--white);
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            line-height: 1;
+        }
+
+        .top-filter-pill:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .top-filter-pill.has-active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--white);
+        }
+
+        .pill-badge {
+            background: var(--white);
+            color: var(--primary);
+            border-radius: 100px;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 1px 6px;
+            min-width: 18px;
+            text-align: center;
+            line-height: 16px;
+        }
+
+        .chevron { font-size: 10px; transition: transform 0.2s; }
+        .top-filter-pill[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+
+        .dropdown-panel {
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            min-width: 210px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 8px;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-6px) scale(0.98);
+            transition: all 0.18s var(--ease);
+            transform-origin: top left;
+            z-index: 1000;
+        }
+
+        .dropdown-panel.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+
+        .dropdown-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 12px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text);
+            cursor: pointer;
+            border-radius: var(--radius-xs);
+            transition: var(--transition);
+            user-select: none;
+        }
+
+        .dropdown-option:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .dropdown-option input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--primary);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .top-reset-btn {
+            margin-left: auto;
+            padding: 6px 14px;
+            font-family: inherit;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent);
+            background: none;
+            border: 1.5px solid transparent;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .top-reset-btn:hover {
+            background: #fff1f1;
+            border-color: var(--accent);
+        }
+
+        /* PAGE WRAPPER */
+        .page-wrapper {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 40px 28px 80px;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--primary); }
+        .breadcrumb-current { color: var(--primary); font-weight: 600; }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .page-header h1 {
+            font-size: 30px;
+            font-weight: 800;
+            color: var(--text);
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .page-header p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* CONTENT LAYOUT */
+        .content-layout {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 28px;
+            align-items: start;
+        }
+
+        /* SIDEBAR */
+        .sidebar-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar-reset {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            padding: 0;
+            transition: var(--transition);
+        }
+
+        .sidebar-reset:hover { opacity: 0.7; }
+
+        .sidebar-body { padding: 8px 0; }
+
+        .filter-block {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .filter-block:last-child { border-bottom: none; }
+
+        .filter-block-title {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            margin-bottom: 12px;
+        }
+
+        .checkbox-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 7px 10px;
+            border-radius: var(--radius-xs);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #374151;
+            transition: var(--transition);
+            user-select: none;
+        }
+
+        .checkbox-item:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .checkbox-item.checked {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--primary);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* PRODUCTS AREA */
+        .products-area { min-width: 0; }
+
+        .toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .products-count { font-size: 14px; color: var(--text-muted); }
+        .products-count strong { color: var(--text); }
+
+        .sort-select {
+            padding: 8px 14px;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--white);
+            cursor: pointer;
+            outline: none;
+            transition: var(--transition);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .sort-select:focus { border-color: var(--primary); }
+
+        /* PRODUCT GRID */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .product-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.22s, box-shadow 0.22s, transform 0.22s;
+            animation: fadeInUp 0.3s var(--ease) both;
+            position: relative;
+        }
+
+        .product-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+        }
+
+        .product-img-wrap {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: #F8F9FB;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 12px;
+            transition: transform 0.35s var(--ease);
+        }
+
+        .product-card:hover .product-img-wrap img {
+            transform: scale(1.06);
+        }
+
+        .badge-ready {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #22c55e;
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 100px;
+        }
+
+        .product-info {
+            padding: 12px 14px 16px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .product-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.45;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            transition: color 0.2s;
+        }
+
+        .product-card:hover .product-name { color: var(--primary); }
+
+        /* EMPTY STATE */
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 72px 20px;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1.5px dashed var(--border);
+        }
+
+        .empty-icon { font-size: 52px; margin-bottom: 16px; opacity: 0.6; }
+        .empty-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+        .empty-desc { font-size: 14px; color: var(--text-muted); max-width: 320px; margin: 0 auto 20px; }
+
+        .empty-reset-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 22px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 100px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .empty-reset-btn:hover { background: var(--primary-hover); }
+
+        @media (max-width: 768px) {
+            .content-layout { grid-template-columns: 1fr; }
+            .sidebar-card { display: none; }
+            .product-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP STICKY FILTER BAR -->
+    <div id="topFilterBar">
+        <span class="top-bar-brand">🔍 กรองสินค้า</span>
+
+        <!-- ประเภทสินค้า -->
+        <div class="top-filter-group">
+            <button id="pill-type" class="top-filter-pill" aria-expanded="false"
+                    onclick="toggleDropdown('dp-type', this)">
+                ประเภทสินค้า
+                <span class="pill-badge" id="badge-type" style="display:none"></span>
+                <span class="chevron">▾</span>
+            </button>
+            <div class="dropdown-panel" id="dp-type">
+                <label class="dropdown-option">
+                    <input type="checkbox" id="top-type-screen" value="screen"
+                           onchange="onFilter('types','screen',this.checked)"> สกรีนลาย
+                </label>
+                <label class="dropdown-option">
+                    <input type="checkbox" id="top-type-noscreen" value="noscreen"
+                           onchange="onFilter('types','noscreen',this.checked)"> ไม่สกรีนลาย
+                </label>
+            </div>
+        </div>
+
+        <div class="top-divider"></div>
+
+        <!-- หมวดหมู่ -->
+        <div class="top-filter-group">
+            <button id="pill-cat" class="top-filter-pill" aria-expanded="false"
+                    onclick="toggleDropdown('dp-cat', this)">
+                หมวดหมู่
+                <span class="pill-badge" id="badge-cat" style="display:none"></span>
+                <span class="chevron">▾</span>
+            </button>
+            <div class="dropdown-panel" id="dp-cat">
+                <label class="dropdown-option">
+                    <input type="checkbox" id="top-cat-custom" value="custom"
+                           onchange="onFilter('categories','custom',this.checked)"> สายคล้องสั่งทำ
+                </label>
+                <label class="dropdown-option">
+                    <input type="checkbox" id="top-cat-neck" value="neck"
+                           onchange="onFilter('categories','neck',this.checked)"> สายคล้องคอ
+                </label>
+                <label class="dropdown-option">
+                    <input type="checkbox" id="top-cat-acc" value="accessories"
+                           onchange="onFilter('categories','accessories',this.checked)"> อุปกรณ์เสริม
+                </label>
+            </div>
+        </div>
+
+        <div class="top-divider"></div>
+
+        <!-- พร้อมส่ง -->
+        <div class="top-filter-group">
+            <button id="pill-avail" class="top-filter-pill" onclick="toggleAvail()">
+                สินค้าพร้อมส่ง
+                <span class="pill-badge" id="badge-avail" style="display:none">✓</span>
+            </button>
+        </div>
+
+        <div class="top-divider"></div>
+
+        <!-- การใช้งาน -->
+        <div class="top-filter-group">
+            <button id="pill-usage" class="top-filter-pill" aria-expanded="false"
+                    onclick="toggleDropdown('dp-usage', this)">
+                การใช้งาน
+                <span class="pill-badge" id="badge-usage" style="display:none"></span>
+                <span class="chevron">▾</span>
+            </button>
+            <div class="dropdown-panel" id="dp-usage">
+                <label class="dropdown-option">
+                    <input type="checkbox" id="top-usage-office" value="office"
+                           onchange="onFilter('usages','office',this.checked)"> สำนักงานบริษัท
+                </label>
+                <label class="dropdown-option">
+                    <input type="checkbox" id="top-usage-school" value="school"
+                           onchange="onFilter('usages','school',this.checked)"> โรงเรียน
+                </label>
+                <label class="dropdown-option">
+                    <input type="checkbox" id="top-usage-event" value="event"
+                           onchange="onFilter('usages','event',this.checked)"> งานอีเว้นท์
+                </label>
+            </div>
+        </div>
+
+        <button class="top-reset-btn" onclick="resetFilters()">✕ ล้างทั้งหมด</button>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-wrapper">
+        <nav class="breadcrumb">
+            <a href="#">หน้าหลัก</a>
+            <span>›</span>
+            <span class="breadcrumb-current">สินค้าทั้งหมด</span>
+        </nav>
+
+        <div class="page-header">
+            <h1>สินค้าทั้งหมด</h1>
+            <p>ค้นหาสินค้าที่ใช่สำหรับคุณ ด้วยระบบกรองสินค้าอัจฉริยะ</p>
+        </div>
+
+        <div class="content-layout">
+
+            <!-- SIDEBAR -->
+            <aside id="sidebarFilter">
+                <div class="sidebar-card">
+                    <div class="sidebar-head">
+                        <span class="sidebar-title">
+                            <svg width="15" height="15" fill="none" stroke="#004998" stroke-width="2.2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                            </svg>
+                            ตัวกรองสินค้า
+                        </span>
+                        <button class="sidebar-reset" onclick="resetFilters()">ล้างค่าทั้งหมด</button>
+                    </div>
+
+                    <div class="sidebar-body">
+                        <!-- 1. ประเภทสินค้า -->
+                        <div class="filter-block">
+                            <div class="filter-block-title">ประเภทสินค้า</div>
+                            <div class="checkbox-list">
+                                <label class="checkbox-item" id="sb-lbl-screen">
+                                    <input type="checkbox" id="sb-type-screen" value="screen"
+                                           onchange="onFilter('types','screen',this.checked)"> สกรีนลาย
+                                </label>
+                                <label class="checkbox-item" id="sb-lbl-noscreen">
+                                    <input type="checkbox" id="sb-type-noscreen" value="noscreen"
+                                           onchange="onFilter('types','noscreen',this.checked)"> ไม่สกรีนลาย
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 2. หมวดหมู่ -->
+                        <div class="filter-block">
+                            <div class="filter-block-title">หมวดหมู่สินค้า</div>
+                            <div class="checkbox-list">
+                                <label class="checkbox-item" id="sb-lbl-custom">
+                                    <input type="checkbox" id="sb-cat-custom" value="custom"
+                                           onchange="onFilter('categories','custom',this.checked)"> สายคล้องสั่งทำ
+                                </label>
+                                <label class="checkbox-item" id="sb-lbl-neck">
+                                    <input type="checkbox" id="sb-cat-neck" value="neck"
+                                           onchange="onFilter('categories','neck',this.checked)"> สายคล้องคอ
+                                </label>
+                                <label class="checkbox-item" id="sb-lbl-acc">
+                                    <input type="checkbox" id="sb-cat-acc" value="accessories"
+                                           onchange="onFilter('categories','accessories',this.checked)"> อุปกรณ์เสริม
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 3. ความพร้อมจำหน่าย -->
+                        <div class="filter-block">
+                            <div class="filter-block-title">ความพร้อมจำหน่าย</div>
+                            <div class="checkbox-list">
+                                <label class="checkbox-item" id="sb-lbl-avail">
+                                    <input type="checkbox" id="sb-avail"
+                                           onchange="onFilter('availability',null,this.checked)"> สินค้าพร้อมส่ง
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 4. ตามการใช้งาน -->
+                        <div class="filter-block">
+                            <div class="filter-block-title">ตามการใช้งาน</div>
+                            <div class="checkbox-list">
+                                <label class="checkbox-item" id="sb-lbl-office">
+                                    <input type="checkbox" id="sb-usage-office" value="office"
+                                           onchange="onFilter('usages','office',this.checked)"> สำนักงานบริษัท
+                                </label>
+                                <label class="checkbox-item" id="sb-lbl-school">
+                                    <input type="checkbox" id="sb-usage-school" value="school"
+                                           onchange="onFilter('usages','school',this.checked)"> โรงเรียน
+                                </label>
+                                <label class="checkbox-item" id="sb-lbl-event">
+                                    <input type="checkbox" id="sb-usage-event" value="event"
+                                           onchange="onFilter('usages','event',this.checked)"> งานอีเว้นท์
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- PRODUCTS AREA -->
+            <div class="products-area">
+                <div class="toolbar">
+                    <span class="products-count">
+                        แสดงสินค้า <strong id="countNum">0</strong> รายการ
+                    </span>
+                    <select class="sort-select" id="sortSelect" onchange="renderProducts()">
+                        <option value="default">เรียง: ค่าเริ่มต้น</option>
+                        <option value="name_asc">ชื่อ ก → ฮ</option>
+                        <option value="name_desc">ชื่อ ฮ → ก</option>
+                        <option value="avail_first">พร้อมส่งก่อน</option>
+                    </select>
+                </div>
+                <div class="product-grid" id="productGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    /* ─── PRODUCT DATA ─── */
+    const PRODUCTS = [
+        { id:  1, name: 'สายคล้องคอแบบพรีเมี่ยม',             type:'screen',   category:'neck',        usage:['office','event'],         available:true  },
+        { id:  2, name: 'สายคล้องคอโพลีเอสเตอร์ (สกรีนลาย)',  type:'screen',   category:'neck',        usage:['office','school'],        available:true  },
+        { id:  3, name: 'สายคล้องคอผ้าไนลอน',                 type:'screen',   category:'neck',        usage:['event'],                   available:false },
+        { id:  4, name: 'สายคล้องสั่งทำซับลิเมชั่น',           type:'screen',   category:'custom',      usage:['office','event'],         available:true  },
+        { id:  5, name: 'สายคล้องสั่งทำลายพิมพ์ยูวี',          type:'screen',   category:'custom',      usage:['event','school'],         available:false },
+        { id:  6, name: 'สายคล้องสั่งทำปัก',                   type:'noscreen', category:'custom',      usage:['office'],                  available:true  },
+        { id:  7, name: 'สายคล้องคอบัตรรีไซเคิล',              type:'noscreen', category:'neck',        usage:['school','office'],        available:true  },
+        { id:  8, name: 'สายคล้องคอต้านเชื้อแบคทีเรีย',        type:'noscreen', category:'neck',        usage:['office'],                  available:false },
+        { id:  9, name: 'สายคล้องคอแบบนิรภัย',                 type:'screen',   category:'custom',      usage:['event'],                   available:true  },
+        { id: 10, name: 'กรอบใส่บัตรพลาสติกพรีเมี่ยม',         type:'noscreen', category:'accessories', usage:['office','school'],        available:true  },
+        { id: 11, name: 'ตัวล็อคแบบหมุน 360 องศา',             type:'noscreen', category:'accessories', usage:['office'],                  available:true  },
+        { id: 12, name: 'โยโย่ Retractable Badge Reel',         type:'noscreen', category:'accessories', usage:['office','school'],        available:true  },
+        { id: 13, name: 'สายคล้องคอแบบถัก',                    type:'screen',   category:'neck',        usage:['event','office'],         available:true  },
+        { id: 14, name: 'สายคล้องสั่งทำสำหรับโรงเรียน',         type:'screen',   category:'custom',      usage:['school'],                  available:false },
+        { id: 15, name: 'ปลอกสาย Silicone สีสัน',               type:'noscreen', category:'accessories', usage:['school','event','office'], available:true  },
+    ];
+
+    /* Placeholder colors per id */
+    const COLORS = [
+        ['FDE8E8','E53935'],['E8F0FD','004998'],['EDE8FD','7C3AED'],['E8FDE8','16A34A'],
+        ['FDF6E8','D97706'],['E8FDFD','0891B2'],['FDE8F8','BE185D'],['FDF5E8','B45309'],
+        ['E8F8FD','0369A1'],['F5F5F5','555555'],['F0F0F0','444444'],['F5EFF0','C0392B'],
+        ['F0F5FF','1D4ED8'],['FFFBEB','92400E'],['F0FDF4','166534'],
+    ];
+
+    function imgUrl(p) {
+        const [bg, fg] = COLORS[(p.id - 1) % COLORS.length];
+        const label = encodeURIComponent(p.name.substring(0, 10));
+        return `https://placehold.co/400x300/${bg}/${fg}?text=${label}`;
+    }
+
+    /* ─── FILTER STATE ─── */
+    const state = { types:[], categories:[], availability:false, usages:[] };
+
+    /* ─── FILTER LOGIC ─── */
+    function onFilter(key, value, checked) {
+        if (key === 'availability') {
+            state.availability = checked;
+        } else {
+            if (checked && !state[key].includes(value)) state[key].push(value);
+            else state[key] = state[key].filter(v => v !== value);
+        }
+        syncAllUI();
+        renderProducts();
+    }
+
+    function toggleAvail() {
+        state.availability = !state.availability;
+        syncAllUI();
+        renderProducts();
+    }
+
+    function resetFilters() {
+        state.types = []; state.categories = []; state.availability = false; state.usages = [];
+        syncAllUI(); renderProducts(); closeAllDropdowns();
+    }
+
+    /* ─── SYNC UI ─── */
+    const SYNC_MAP = [
+        ['sb-type-screen','types','screen'],    ['sb-type-noscreen','types','noscreen'],
+        ['sb-cat-custom','categories','custom'],['sb-cat-neck','categories','neck'],['sb-cat-acc','categories','accessories'],
+        ['sb-avail','availability',null],
+        ['sb-usage-office','usages','office'],  ['sb-usage-school','usages','school'],['sb-usage-event','usages','event'],
+        ['top-type-screen','types','screen'],   ['top-type-noscreen','types','noscreen'],
+        ['top-cat-custom','categories','custom'],['top-cat-neck','categories','neck'],['top-cat-acc','categories','accessories'],
+        ['top-usage-office','usages','office'], ['top-usage-school','usages','school'],['top-usage-event','usages','event'],
+    ];
+
+    function syncAllUI() {
+        SYNC_MAP.forEach(([id, key, val]) => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.checked = (key === 'availability') ? state.availability : state[key].includes(val);
+            const lbl = el.closest('.checkbox-item');
+            if (lbl) lbl.classList.toggle('checked', el.checked);
+        });
+        updateBadges();
+    }
+
+    function updateBadges() {
+        const tc = state.types.length, cc = state.categories.length, uc = state.usages.length;
+        const setBadge = (id, show, txt) => {
+            const el = document.getElementById(id);
+            el.style.display = show ? 'inline-flex' : 'none';
+            if (txt !== undefined) el.textContent = txt;
+        };
+        setBadge('badge-type',  tc > 0, tc);
+        setBadge('badge-cat',   cc > 0, cc);
+        setBadge('badge-avail', state.availability);
+        setBadge('badge-usage', uc > 0, uc);
+        document.getElementById('pill-type').classList.toggle('has-active', tc > 0);
+        document.getElementById('pill-cat').classList.toggle('has-active', cc > 0);
+        document.getElementById('pill-avail').classList.toggle('has-active', state.availability);
+        document.getElementById('pill-usage').classList.toggle('has-active', uc > 0);
+    }
+
+    /* ─── RENDER ─── */
+    function getFiltered() {
+        return PRODUCTS.filter(p => {
+            if (state.types.length      && !state.types.includes(p.type))                           return false;
+            if (state.categories.length && !state.categories.includes(p.category))                  return false;
+            if (state.availability      && !p.available)                                            return false;
+            if (state.usages.length     && !p.usage.some(u => state.usages.includes(u)))            return false;
+            return true;
+        });
+    }
+
+    function renderProducts() {
+        const grid = document.getElementById('productGrid');
+        const countEl = document.getElementById('countNum');
+        const sort = document.getElementById('sortSelect').value;
+        let list = [...getFiltered()];
+        if (sort === 'name_asc')    list.sort((a,b) => a.name.localeCompare(b.name,'th'));
+        if (sort === 'name_desc')   list.sort((a,b) => b.name.localeCompare(a.name,'th'));
+        if (sort === 'avail_first') list.sort((a,b) => (b.available?1:0)-(a.available?1:0));
+        countEl.textContent = list.length;
+
+        if (!list.length) {
+            grid.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-icon">🔍</div>
+                    <h3 class="empty-title">ไม่พบสินค้าที่ตรงตามเงื่อนไขที่เลือก</h3>
+                    <p class="empty-desc">ลองเปลี่ยนเงื่อนไขการกรองหรือล้างตัวกรองทั้งหมด</p>
+                    <button class="empty-reset-btn" onclick="resetFilters()">ล้างตัวกรองทั้งหมด</button>
+                </div>`;
+            return;
+        }
+
+        grid.innerHTML = list.map((p, i) => `
+            <a class="product-card" href="#" style="animation-delay:${i*40}ms" aria-label="${p.name}">
+                <div class="product-img-wrap">
+                    <img src="${imgUrl(p)}" alt="${p.name}" loading="lazy"
+                         onerror="this.src='https://placehold.co/400x300/f0f0f0/999?text=สินค้า'">
+                    ${p.available ? '<span class="badge-ready">พร้อมส่ง</span>' : ''}
+                </div>
+                <div class="product-info">
+                    <div class="product-name">${p.name}</div>
+                </div>
+            </a>`
+        ).join('');
+    }
+
+    /* ─── DROPDOWN ─── */
+    function toggleDropdown(panelId, btn) {
+        const panel = document.getElementById(panelId);
+        const isOpen = panel.classList.contains('open');
+        closeAllDropdowns();
+        if (!isOpen) { panel.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    }
+
+    function closeAllDropdowns() {
+        document.querySelectorAll('.dropdown-panel.open').forEach(p => p.classList.remove('open'));
+        document.querySelectorAll('.top-filter-pill[aria-expanded]').forEach(b => b.setAttribute('aria-expanded','false'));
+    }
+
+    document.addEventListener('click', e => {
+        if (!e.target.closest('.top-filter-group')) closeAllDropdowns();
+    });
+
+    /* ─── SCROLL DETECTION ─── */
+    const topBar = document.getElementById('topFilterBar');
+    const sidebar = document.getElementById('sidebarFilter');
+
+    window.addEventListener('scroll', () => {
+        const rect = sidebar.getBoundingClientRect();
+        if (rect.bottom <= 0) {
+            topBar.classList.add('visible');
+        } else {
+            topBar.classList.remove('visible');
+            closeAllDropdowns();
+        }
+    }, { passive: true });
+
+    /* ─── INIT ─── */
+    renderProducts();
+    updateBadges();
+    </script>
+</body>
+</html>
