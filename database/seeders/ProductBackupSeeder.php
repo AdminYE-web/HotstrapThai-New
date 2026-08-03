@@ -1,0 +1,5822 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ProductBackupSeeder extends Seeder
+{
+    public function run()
+    {
+        DB::table('products')->insert(
+[
+                [
+                    'id' => 1,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอพนักงานแบบพรีเมียม',
+                    'slug' => 'prod-1-1-123',
+                    'base_price' => '50.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 2,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอพนักงานผ้าโพลีเอสเตอร์',
+                    'slug' => 'prod-2-2-180',
+                    'base_price' => '29.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 3,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอพนักงานผ้าไนลอน',
+                    'slug' => 'prod-3-3-702',
+                    'base_price' => '47.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 4,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอพนักงานสกรีนแบบซับลิเมชั่น',
+                    'slug' => 'prod-4-4-701',
+                    'base_price' => '36.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 5,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องบัตรรีไซเคิล',
+                    'slug' => 'prod-5-5-937',
+                    'base_price' => '29.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 6,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอต้านเชื้อแบคทีเรีย',
+                    'slug' => 'prod-6-6-662',
+                    'base_price' => '60.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 7,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอผ้าแจ็คการ์ด',
+                    'slug' => 'prod-7-7-536',
+                    'base_price' => '59.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 8,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอพนักงานแบบชุดสำเร็จรูป',
+                    'slug' => 'prod-8-8-812',
+                    'base_price' => '32.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 9,
+                    'category_id' => 1,
+                    'name' => 'สายคล้อง + โยโย่',
+                    'slug' => 'prod-9-9-296',
+                    'base_price' => '43.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 10,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอซิลิโคน(สกรีนลาย)',
+                    'slug' => 'prod-10-10-719',
+                    'base_price' => '35.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 11,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอ Snap yoyo',
+                    'slug' => 'snap-yoyo-11-764',
+                    'base_price' => '51.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 12,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอติดโลโก้เรซิ่น',
+                    'slug' => 'prod-12-12-652',
+                    'base_price' => '46.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 13,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอบัตรสะท้อนแสง',
+                    'slug' => 'prod-13-13-170',
+                    'base_price' => '45.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 14,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องบัตรหนัง PU',
+                    'slug' => 'pu-14-190',
+                    'base_price' => '48.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 15,
+                    'category_id' => 1,
+                    'name' => 'สายคล้องคอเหรียญรางวัลอะคริลิค',
+                    'slug' => 'prod-15-15-478',
+                    'base_price' => '35.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 16,
+                    'category_id' => 2,
+                    'name' => 'สายคล้องคอผ้าโพลีเอสเตอร์(ไม่สกรีนลาย)-Flag red(10mm)',
+                    'slug' => 'flag-red10mm-16-614',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 17,
+                    'category_id' => 2,
+                    'name' => 'สายคล้องคอผ้าโพลีเอสเตอร์(ไม่สกรีนลาย)-293C(10mm)',
+                    'slug' => '293c10mm-17-547',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 18,
+                    'category_id' => 2,
+                    'name' => 'สายคล้องคอผ้าโพลีเอสเตอร์(ไม่สกรีนลาย)-Black(10mm)',
+                    'slug' => 'black10mm-18-811',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 19,
+                    'category_id' => 2,
+                    'name' => 'สายคล้องคอผ้าโพลีเอสเตอร์(ไม่สกรีนลาย)-348C(10mm)',
+                    'slug' => '348c10mm-19-365',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 20,
+                    'category_id' => 2,
+                    'name' => 'สายคล้องคอซิลิโคน(ไม่สกรีนลาย)-น้ำเงิน(10mm)',
+                    'slug' => '10mm-20-812',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 21,
+                    'category_id' => 2,
+                    'name' => 'สายคล้องคอซิลิโคน(ไม่สกรีนลาย)-ชมพู(10mm)',
+                    'slug' => '10mm-21-468',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 22,
+                    'category_id' => 3,
+                    'name' => 'สายคล้องคอโทรศัพท์',
+                    'slug' => 'prod-22-22-285',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 23,
+                    'category_id' => 3,
+                    'name' => 'สายคล้องมือถือ',
+                    'slug' => 'prod-23-23-370',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 24,
+                    'category_id' => 4,
+                    'name' => 'ID-STD-1(พลาสติก)',
+                    'slug' => 'id-std-1-24-646',
+                    'base_price' => '7.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 25,
+                    'category_id' => 4,
+                    'name' => 'ID-STD-2(พลาสติก)',
+                    'slug' => 'id-std-2-25-892',
+                    'base_price' => '7.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 26,
+                    'category_id' => 4,
+                    'name' => 'ID-STD-3(พลาสติก)',
+                    'slug' => 'id-std-3-26-338',
+                    'base_price' => '7.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 27,
+                    'category_id' => 4,
+                    'name' => 'ID-1_N(PVC)',
+                    'slug' => 'id-1-npvc-27-495',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 28,
+                    'category_id' => 4,
+                    'name' => 'ID-1_NZ(PVC)',
+                    'slug' => 'id-1-nzpvc-28-139',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 29,
+                    'category_id' => 4,
+                    'name' => 'ID-2_N(PVC)',
+                    'slug' => 'id-2-npvc-29-705',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 30,
+                    'category_id' => 4,
+                    'name' => 'ID-3_N(PVC)',
+                    'slug' => 'id-3-npvc-30-151',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 31,
+                    'category_id' => 4,
+                    'name' => 'ID-4_N(PVC)',
+                    'slug' => 'id-4-npvc-31-502',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 32,
+                    'category_id' => 4,
+                    'name' => 'ID-4_NZ(PVC)',
+                    'slug' => 'id-4-nzpvc-32-783',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 33,
+                    'category_id' => 4,
+                    'name' => 'ID-5_NZ(PVC)',
+                    'slug' => 'id-5-nzpvc-33-917',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 34,
+                    'category_id' => 4,
+                    'name' => 'ID-6_N(PVC)',
+                    'slug' => 'id-6-npvc-34-519',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 35,
+                    'category_id' => 4,
+                    'name' => 'ID-6_NZ(PVC)',
+                    'slug' => 'id-6-nzpvc-35-334',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 36,
+                    'category_id' => 4,
+                    'name' => 'ID-8_N(PVC)',
+                    'slug' => 'id-8-npvc-36-364',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 37,
+                    'category_id' => 4,
+                    'name' => 'ID-9_N(PVC)',
+                    'slug' => 'id-9-npvc-37-185',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 38,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Black',
+                    'slug' => 'id-pu-black-38-485',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 39,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_White',
+                    'slug' => 'id-pu-white-39-975',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 40,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Gray',
+                    'slug' => 'id-pu-gray-40-598',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 41,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Blue',
+                    'slug' => 'id-pu-blue-41-349',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 42,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Skyblue',
+                    'slug' => 'id-pu-skyblue-42-957',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 43,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Brown',
+                    'slug' => 'id-pu-brown-43-629',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 44,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Cream',
+                    'slug' => 'id-pu-cream-44-954',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 45,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Green',
+                    'slug' => 'id-pu-green-45-469',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 46,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Lightgreen',
+                    'slug' => 'id-pu-lightgreen-46-904',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 47,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Navy',
+                    'slug' => 'id-pu-navy-47-427',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 48,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Orange',
+                    'slug' => 'id-pu-orange-48-524',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 49,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Pink',
+                    'slug' => 'id-pu-pink-49-829',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 50,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Red',
+                    'slug' => 'id-pu-red-50-387',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 51,
+                    'category_id' => 4,
+                    'name' => 'ID_PU_Yellow',
+                    'slug' => 'id-pu-yellow-51-692',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 52,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Green',
+                    'slug' => 'id-card-sliding-plastic-pp-green-52-834',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 53,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Blue Gray',
+                    'slug' => 'id-card-sliding-plastic-pp-blue-gray-53-792',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 54,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - White',
+                    'slug' => 'id-card-sliding-plastic-pp-white-54-352',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 55,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Red',
+                    'slug' => 'id-card-sliding-plastic-pp-red-55-156',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 56,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Gray',
+                    'slug' => 'id-card-sliding-plastic-pp-gray-56-236',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 57,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Yellow',
+                    'slug' => 'id-card-sliding-plastic-pp-yellow-57-718',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 58,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Blue',
+                    'slug' => 'id-card-sliding-plastic-pp-blue-58-574',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 59,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Orange',
+                    'slug' => 'id-card-sliding-plastic-pp-orange-59-230',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 60,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Pink',
+                    'slug' => 'id-card-sliding-plastic-pp-pink-60-608',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 61,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Sky Blue',
+                    'slug' => 'id-card-sliding-plastic-pp-sky-blue-61-922',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 62,
+                    'category_id' => 4,
+                    'name' => 'ID_CARD Sliding Plastic PP - Black',
+                    'slug' => 'id-card-sliding-plastic-pp-black-62-274',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 63,
+                    'category_id' => 4,
+                    'name' => 'F001',
+                    'slug' => 'f001-63-358',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 64,
+                    'category_id' => 4,
+                    'name' => 'F002',
+                    'slug' => 'f002-64-901',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 65,
+                    'category_id' => 4,
+                    'name' => 'F003',
+                    'slug' => 'f003-65-960',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 66,
+                    'category_id' => 4,
+                    'name' => 'F004',
+                    'slug' => 'f004-66-874',
+                    'base_price' => '30.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 67,
+                    'category_id' => 5,
+                    'name' => 'โยโย่ดำ',
+                    'slug' => 'prod-67-67-558',
+                    'base_price' => '29.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 68,
+                    'category_id' => 5,
+                    'name' => 'โยโย่ขาว',
+                    'slug' => 'prod-68-68-394',
+                    'base_price' => '19.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 69,
+                    'category_id' => 5,
+                    'name' => 'สต็อปเปอร์โยโย่-สีดำ',
+                    'slug' => 'prod-69-69-949',
+                    'base_price' => '45.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 70,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีแดงทึบ',
+                    'slug' => 'prod-70-70-300',
+                    'base_price' => '25.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 71,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีขาวทึบ',
+                    'slug' => 'prod-71-71-112',
+                    'base_price' => '36.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 72,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีดำทึบ',
+                    'slug' => 'prod-72-72-691',
+                    'base_price' => '35.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 73,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีดำโปร่งใส',
+                    'slug' => 'prod-73-73-474',
+                    'base_price' => '21.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 74,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีนำเงินโปร่งใส',
+                    'slug' => 'prod-74-74-631',
+                    'base_price' => '43.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 75,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีฟ้าโปร่งใส',
+                    'slug' => 'prod-75-75-927',
+                    'base_price' => '41.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 76,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีเขียวโปร่งใส',
+                    'slug' => 'prod-76-76-648',
+                    'base_price' => '37.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 77,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีเหลืองโปร่งใส',
+                    'slug' => 'prod-77-77-407',
+                    'base_price' => '26.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 78,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีม่วงโปร่งใส',
+                    'slug' => 'prod-78-78-848',
+                    'base_price' => '44.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 79,
+                    'category_id' => 5,
+                    'name' => 'คาราบิเนอร์โยโย่ - สีแดงโปร่งใส',
+                    'slug' => 'prod-79-79-306',
+                    'base_price' => '45.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 80,
+                    'category_id' => 6,
+                    'name' => 'คลิปโลโก้เรซิ่น Front Keeper',
+                    'slug' => 'front-keeper-80-767',
+                    'base_price' => '13.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 81,
+                    'category_id' => 6,
+                    'name' => 'Snap yoyo',
+                    'slug' => 'snap-yoyo-81-173',
+                    'base_price' => '9.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 82,
+                    'category_id' => 6,
+                    'name' => 'ตะขอสปริงA',
+                    'slug' => 'a-82-334',
+                    'base_price' => '7.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 83,
+                    'category_id' => 6,
+                    'name' => 'ตะขอสปริงB',
+                    'slug' => 'b-83-898',
+                    'base_price' => '8.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 84,
+                    'category_id' => 6,
+                    'name' => 'ตะขอสปริงดีดทรงรี',
+                    'slug' => 'prod-84-84-662',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 85,
+                    'category_id' => 6,
+                    'name' => 'ตะขอสปริงดีด',
+                    'slug' => 'prod-85-85-663',
+                    'base_price' => '9.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 86,
+                    'category_id' => 6,
+                    'name' => 'คลิปเหล็กแบบหนีบ',
+                    'slug' => 'prod-86-86-473',
+                    'base_price' => '14.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 87,
+                    'category_id' => 6,
+                    'name' => 'คลิปเหล็กแบบหนีบ+พีวีซี',
+                    'slug' => 'prod-87-87-682',
+                    'base_price' => '3.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 88,
+                    'category_id' => 6,
+                    'name' => 'คลิปหนีบ A',
+                    'slug' => 'a-88-153',
+                    'base_price' => '6.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 89,
+                    'category_id' => 6,
+                    'name' => 'ตะขอพีวีซี',
+                    'slug' => 'prod-89-89-568',
+                    'base_price' => '9.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 90,
+                    'category_id' => 6,
+                    'name' => 'คลิปยูโร A',
+                    'slug' => 'a-90-536',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 91,
+                    'category_id' => 6,
+                    'name' => 'คลิปยูโร B',
+                    'slug' => 'b-91-163',
+                    'base_price' => '12.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 92,
+                    'category_id' => 6,
+                    'name' => 'คลิปยูโร C',
+                    'slug' => 'c-92-633',
+                    'base_price' => '3.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 93,
+                    'category_id' => 6,
+                    'name' => 'คลิปยูโร(ทรงไม้พาย)',
+                    'slug' => 'prod-93-93-929',
+                    'base_price' => '4.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 94,
+                    'category_id' => 6,
+                    'name' => 'คลิปโลโกเรซิ่น (สีขาว)',
+                    'slug' => 'prod-94-94-636',
+                    'base_price' => '9.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 95,
+                    'category_id' => 6,
+                    'name' => 'คลิปโลโกเรซิ่น (สีดำ)',
+                    'slug' => 'prod-95-95-544',
+                    'base_price' => '8.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 96,
+                    'category_id' => 6,
+                    'name' => 'Safety part',
+                    'slug' => 'safety-part-96-799',
+                    'base_price' => '12.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 97,
+                    'category_id' => 6,
+                    'name' => 'สายห้อยโทรศัพท์มือถือ',
+                    'slug' => 'prod-97-97-522',
+                    'base_price' => '6.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 98,
+                    'category_id' => 6,
+                    'name' => 'สายห้อยโทรศัพท์มือถือ (แบบถอดได้)',
+                    'slug' => 'prod-98-98-423',
+                    'base_price' => '5.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 99,
+                    'category_id' => 6,
+                    'name' => 'สายห้อยโทรศัพท์มือถือ (แบบชิ้นเดียว)',
+                    'slug' => 'prod-99-99-628',
+                    'base_price' => '9.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 100,
+                    'category_id' => 6,
+                    'name' => 'ตะขอพลาสติก',
+                    'slug' => 'prod-100-100-237',
+                    'base_price' => '8.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 101,
+                    'category_id' => 6,
+                    'name' => 'ตัวล็อกก้ามปู',
+                    'slug' => 'prod-101-101-206',
+                    'base_price' => '15.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 102,
+                    'category_id' => 6,
+                    'name' => 'ตัวล็อกแบบหนีบ',
+                    'slug' => 'prod-102-102-890',
+                    'base_price' => '4.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 103,
+                    'category_id' => 6,
+                    'name' => 'กระดุมเรซิ่น',
+                    'slug' => 'prod-103-103-230',
+                    'base_price' => '11.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 104,
+                    'category_id' => 6,
+                    'name' => 'ตัวเลื่อนปรับความยาว แบบ A',
+                    'slug' => 'a-104-510',
+                    'base_price' => '14.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 105,
+                    'category_id' => 6,
+                    'name' => 'ตัวเลื่อนปรับระดับสายบอลกลม',
+                    'slug' => 'prod-105-105-752',
+                    'base_price' => '7.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 106,
+                    'category_id' => 6,
+                    'name' => 'ตะขอแมสแบบ A',
+                    'slug' => 'a-106-800',
+                    'base_price' => '7.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 107,
+                    'category_id' => 6,
+                    'name' => 'ตะขอแมสแบบ B',
+                    'slug' => 'b-107-309',
+                    'base_price' => '14.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 108,
+                    'category_id' => 6,
+                    'name' => 'ตัวคล้องขวดน้ำ แบบอลูมิเนียม',
+                    'slug' => 'prod-108-108-829',
+                    'base_price' => '3.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 109,
+                    'category_id' => 6,
+                    'name' => 'ตัวคล้องขวดน้ำแบบยาง A',
+                    'slug' => 'a-109-863',
+                    'base_price' => '5.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 110,
+                    'category_id' => 6,
+                    'name' => 'ตัวคล้องขวดน้ำแบบยาง B',
+                    'slug' => 'b-110-279',
+                    'base_price' => '14.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 111,
+                    'category_id' => 6,
+                    'name' => 'PET Holder TypeC',
+                    'slug' => 'pet-holder-typec-111-430',
+                    'base_price' => '10.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 112,
+                    'category_id' => 7,
+                    'name' => 'คาราบิเนอร์ แบบเงา : Ruby Red',
+                    'slug' => 'ruby-red-112-429',
+                    'base_price' => '20.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 113,
+                    'category_id' => 7,
+                    'name' => 'คาราบิเนอร์ แบบเงา : Black',
+                    'slug' => 'black-113-683',
+                    'base_price' => '24.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 114,
+                    'category_id' => 7,
+                    'name' => 'คาราบิเนอร์ แบบเงา : Silver',
+                    'slug' => 'silver-114-897',
+                    'base_price' => '12.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 115,
+                    'category_id' => 7,
+                    'name' => 'คาราบิเนอร์ แบบด้าน : Ruby Red',
+                    'slug' => 'ruby-red-115-762',
+                    'base_price' => '14.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 116,
+                    'category_id' => 7,
+                    'name' => 'คาราบิเนอร์ แบบด้าน : Black',
+                    'slug' => 'black-116-797',
+                    'base_price' => '21.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 117,
+                    'category_id' => 7,
+                    'name' => 'คาราบิเนอร์ แบบด้าน : Silver',
+                    'slug' => 'silver-117-246',
+                    'base_price' => '23.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 118,
+                    'category_id' => 6,
+                    'name' => 'กล้ามปูB_1',
+                    'slug' => 'b-1-880-852',
+                    'base_price' => '10.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ],
+                [
+                    'id' => 119,
+                    'category_id' => 6,
+                    'name' => 'ตัวเลื่อนปรับความยาว แบบ C',
+                    'slug' => 'c-998-980',
+                    'base_price' => '10.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ],
+                [
+                    'id' => 120,
+                    'category_id' => 6,
+                    'name' => 'ตัวเลื่อนปรับความยาว แบบ E',
+                    'slug' => 'e-460-977',
+                    'base_price' => '10.00',
+                    'is_active' => 1,
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ]
+            ]
+        );
+
+        DB::table('product_details')->insert(
+[
+                [
+                    'id' => 1,
+                    'product_id' => 1,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอพนักงานติดโลโก้เรซิ่นอย่างดี มาพร้อมกับพาร์ทพิเศษ Frontkeeper ช่วยให้สายคล้องของคุณไม่พลิกไปมา และแสดงโลโก้ไว้ด้านหน้าเสมอ อีกทั้งยังผลิตจากวัสดุคุณภาพดี สามารถออกแบบสกรีนชื่อบริษัท ชื่อโรงพยาบาล ฯลฯ ลงบนสายคล้องคอ สามารถเลือกสีของตัวสายคล้องคอได้ทั้งสีธรรมดาและสีย้อมพิเศษ ออกแบบได้ตามต้องการ นอกจากนี้ยังมีซองใส่บัตร (บัตร ID/นามบัตร) ให้เลือกตามความต้องการอีกด้วยยิ่งสั่งมากก็จะได้รับราคาถูกลงอีกด้วย',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 2,
+                    'product_id' => 2,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => 1,
+                    'description' => 'เราขอแนะนำสายคล้องคอหรือสายคล้องบัตรพนักงานและบัตรต่างๆ ราคาถูก คุณภาพดี ที่สามารถออกแบบได้ตามความต้องการ ไม่ว่าจะเป็นการระบุสีของเชือก หรือสกรีนชื่อโลโก้ลงบนเชือก สามารถผลิตขั้นต่ำเพียง 20 เส้น ไปจนถึงจำนวนมากกว่า 10,000 เส้น ในระยะเวลาสั้น ๆ สำหรับใช้ในงานเลี้ยงหรืองานกิจกรรมของบริษัท อีกทั้งเรายังมีซองจำหน่ายแบบอ่อนสำหรับใส่บัตรพนักงาน บัตร ID และบัตรต่าง ๆ แถมฟรีอีกด้วยและท่านยังสามารถสั่งทำสายคล้องคอพนักงานขนาดพิเศษได้อีกด้วย',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 3,
+                    'product_id' => 3,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอผ้าไนลอนซึ่งมีราคาถูก แต่มีคุณสมบัติเด่นคือไม่ยับง่าย และอยู่ทรงคงสภาพเดิมได้ดี มีสีที่สดกว่าผ้าโพลีเอสเตอร์ เนื้อผ้ามีความเหนียวและยืดหยุ่น สามารถผลิตขั้นต่ำเพียง 20 เส้น ไปจนถึงจำนวนมากกว่า 10,000 เส้นในระยะเวลาสั้น ๆ สำหรับใช้ในงานเลี้ยงหรืองานกิจกรรมของบริษัท อีกทั้งเรายังมีซองแบบอ่อนสำหรับใส่บัตรพนักงาน บัตร ID และบัตรต่าง ๆ แถมฟรีอีกด้วยและท่านยังสามารถสั่งทำสายคล้องคอพนักงานแบบพิเศษได้อีกด้วย',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 4,
+                    'product_id' => 4,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => 2,
+                    'description' => 'เราสามารถสกรีนแบบซับลิเมชั่นได้จากภาพถ่ายหรือดีไซน์ที่มีการไล่โทนสีฉูดฉาด(Gradation) ได้ตามที่ท่านเป็นผู้ออกแบบ อีกทั้งยังสกรีนโลโก้ได้แบบไม่จำกัดจำนวนสีในราคาถูก ทั้งนี้อาจมีบางแบบที่ไม่สามารถสกรีนได้ สามารถตรวจสอบจากสายคล้องคอตัวอย่างที่อยู่ด้านล่าง หากเป็นโลโก้แบบพิเศษจะเป็นปัญหาได้ เราจะผลิตตัวอย่างสินค้าตามตำแหน่งดีไซน์ของลูกค้าที่ออกแบบมา (*1) ให้ตรวจสอบก่อนการทำการผลิตจริง หรือหากเป็นงานที่ต้องการสั่งผลิตด่วน (*2) ทางเราก็มีบริการเช่นกันหรือแม้กระทั่งสายขนาดพิเศษราคาถูกก็สามารถสั่งได้ (*3) ระยะขอบและตำแหน่งในการสกรีนจะอยู่ประมาณ 2-3 cm (*4) อาจจะมีวันหยุดของโรงงาน กรุณาแจ้งล่วงหน้าก่อนสั่งสินค้า',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 5,
+                    'product_id' => 5,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => null,
+                    'description' => 'บริษัทได้เล็งเห็นถึงปัญหาโลกร้อนที่รุนแรงมากยิ่งขึ้นในทุกๆวัน เราจึงได้คิดค้นหาทางออกที่จะร่วมเป็นส่วนหนึ่งในการช่วยลดปัญหานี้ เราจึงได้สินค้าตัวใหม่เป็นสายคล้องบัตรรีไซเคิล ตัวสายผลิตจากขวดพลาสติกและพลาสติก PET ซึ่งเป็นการช่วยลดขยะ นำมาหมุนเวียนเพื่อผลิตเป็นสินค้าตัวใหม่ สายคล้องบัตรมีสองขนาดคือ 15, 20 mm. สามารถติดส่วนประกอบสายได้หลากหลาย ตัวสายสามารถพิมพ์ลายได้หลากหลายเฉดสีตามความต้องการของคุณลูกค้า ทั้งนี้ทางเราขอขอบคุณทุกท่านที่สนใจและร่วมเป็นส่วนหนึ่งในการลดการเกิดขยะซึ่งเป็นส่วนหนึงในปัญหาโลกร้อน สนใจสินค้ากรุณาติดต่อพนักงานขาย',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 6,
+                    'product_id' => 6,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => 3,
+                    'description' => 'ข้อมูลจำเพาะสายคล้องคอต้านเชื้อแบคทีเรีย หากคุณเป็นคนนึงที่ต้องคล้องสายคล้องคอเป็นเวลานานๆหรือตลอดทั้งวัน ก็จะพบปัญหาสายบาดคอคันคอ สวมใส่แล้วรู้สึกไม่สบาย สาเหตุหนึ่งเกิดจากตัวสายผลิตจากเนื้อผ้าที่ไม่มีคุณภาพ ราคาไม่สอดคล้องกับคุณภาพที่ได้รับ คุณจะไม่พบปัญหานี้เมื่อสั่งซื้อสายกับทางเรา ตัวสายนี้ผลิตจากวัสดุที่ดี สวมใส่ง่ายสบายคอ เป็นสายคล้องคอพิมพ์ลายแบบสอดสีหรือที่เรียกว่าซับลิเมชั่น นำไปชุบด้วยน้ำยาพิเศษ ซึงจะเกาะติดกับตัวสายช่วยลดการเกิดเชื้อโรคหรือเชื้อแบคทีเรียที่เป็นสาเหตุหลักของการเกิดโรค เจ็บป่วย สวมใส่สบายปลอดภัยจากโรค ผ่านการตรวจสอบวัดประสิทธิภาพจากประเทศญี่ปุ่น',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 7,
+                    'product_id' => 7,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอผ้าแจ็คการ์ด(Jacquard) เป็นสายคล้องคอแบบปักลายเป็นโลโก้หรือชื่อบริษัท ลายที่ปักจะเห็นได้ทั้งสองด้าน สามารถระบายความร้อนได้ดี มีความสวยงามเรียบหรู ทำความสะอาดได้ง่ายซักล้างได้เนื่องจากเป็นการปักจึงทำให้โลโก้ที่ปักไม่หลุดลอกจากการซักเหมือนการสกรีน สีของสายจะผลิตตามความต้องการของลูกค้าโดยจะผลิตให้มีความใกล้เคียงที่สุด ทำให้สามารถสั่งเป็นสีใดก็ได้ตาม Pantone ที่ต้องการ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 8,
+                    'product_id' => 8,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => 3,
+                    'description' => 'สายคล้องคอพนักงานแบบชุดสำเร็จรูป เป็นสายคล้องคอที่คุณลูกค้าสามารถ สกรีนโลโก้หรือชื่อบริษัทลงบนตัวสายที่ทำออกมาแบบประกอบเรียบร้อยแล้วได้อย่างง่ายดาย และยังสามารถออกแบบโลโก้เพื่อติดลงบนตัวคลิปที่รองรับการติดสติ๊กเกอร์เรซิ่นได้อีกด้วย',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 9,
+                    'product_id' => 9,
+                    'product_type_id' => 1,
+                    'occasion_type_id' => 1,
+                    'description' => null,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 10,
+                    'product_id' => 10,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอแบบซิลิโคน หรือสายยาง คุณสมบัติพิเศษสามารถล้างทำความสะอาดได้ง่ายป้องกันการสะสมของสิ่งสกปรก ไม่เกิดฝุ่นเหมือนสายแบบปกติทั่วไป สามารถสกรีนชื่อบริษัทหรือชื่อหน่วยงานได้ ตัวสายทำจากซิลิโคนอ่อน ทำให้สายนิ่มและยืดได้เล็กน้อย มีสีตาม Pantone Dic และสามารถสกรีนข้อความได้มากสุด 3 สี สายมีสองขนาดคือ 10 และ 15mm สามารถใช้งานได้นาน ทนทาน สีไม่ซีด สกรีนไม่หลุดลอกได้ง่าย',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:02'
+                ],
+                [
+                    'id' => 11,
+                    'product_id' => 11,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => 1,
+                    'description' => 'สายคล้องคอพนักงานติดโลโก้เรซิ่นอย่างดี มาพร้อมกับพาร์ทพิเศษ Snap yoyo ด้วยขนาดโลโก้มีใหญ่ขึ้นทำให้สามารถเห็นโลโก้บริษัทได้เด่นชัดขึ้นและตัวคลิปยังสามารถยืดได้ถึง 33 cm. ใช้ในชีวิตประจำวันได้สะดวกยิ่งขึ้น มีความแข็งแรงและทนทานนอกจากนี้ยังมีซองใส่บัตร (บัตร ID/นามบัตร) ให้เลือกตามความต้องการอีกด้วยยิ่งสั่งมากก็จะได้รับราคาถูกลงอีกด้วย',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:02'
+                ],
+                [
+                    'id' => 12,
+                    'product_id' => 12,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอพนักงานติดโลโก้เรซิ่นอย่างดี ผลิตจากวัสดุคุณภาพดี สามารถออกแบบสกรีนชื่อบริษัท ชื่อโรงพยาบาล ฯลฯ ลงบนสายคล้องคอ สามารถเลือกสีของตัวสายคล้องคอได้ทั้งสีธรรมดาและสีย้อมพิเศษ ออกแบบได้ตามต้องการ นอกจากนี้ยังมีซองใส่บัตร (บัตร ID/นามบัตร) ให้เลือกตามความต้องการอีกด้วยยิ่งสั่งมากก็จะได้รับราคาถูกลงอีกด้วย',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:02'
+                ],
+                [
+                    'id' => 13,
+                    'product_id' => 13,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => null,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:02'
+                ],
+                [
+                    'id' => 14,
+                    'product_id' => 14,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => null,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:02'
+                ],
+                [
+                    'id' => 15,
+                    'product_id' => 15,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'เหรียญอะคริลิคเหมาะสำหรับ นำไปทำเหรียญรางวัลหรือเหรียญกิจกรรมต่างๆ เช่น รางวัลงานวิ่ง, ของพรีเมียมงานคอนเสิร์ต, เหรียญรางวัลเข้าร่วมกิจกรรมต่างๆ เป็นต้น ตัวเหรียญทำจากอะคริลิค สามารถออกแบบเป็นรูปแบบต่างๆ ได้ ไม่จำเป็นต้องเป็นทรงสี่เหลี่ยมหรือวงกลม การสกรีนจะมีสองแบบคือสกรีนแบบ UV และสกรีนแบบประกบ แบบ UV จะเป็นการสกรีนแบบที่ต้องการลงบนผิวของชิ้นงานอะคริลิค แต่แบบประกบจะเป็นการพิมพ์ลายบนกระดาษและใช้อะคริลิคสองชิ้นประกบเข้าด้วยกัน',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:02'
+                ],
+                [
+                    'id' => 16,
+                    'product_id' => 16,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอพนักงานแบบไม่สกรีน ยาว 45cm(450mm) ขนาด 10mm สี Flag red ตัวสายมีการตัดเย็บอย่างดี มาพร้อมกับตะขอเกี่ยวซองใส่บัตร ไม่มีจำนวนขั้นต่ำในการสั่งซื้อ 1 เส้นก็สั่งได้',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 17,
+                    'product_id' => 17,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอพนักงานแบบไม่สกรีน ยาว 45cm(450mm) ขนาด 10mm สี 293C ตัวสายมีการตัดเย็บอย่างดี มาพร้อมกับตะขอเกี่ยวซองใส่บัตร ไม่มีจำนวนขั้นต่ำในการสั่งซื้อ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 18,
+                    'product_id' => 18,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอพนักงานแบบไม่สกรีน ยาว 45cm(450mm) ขนาด 10mm สี Black ตัวสายมีการตัดเย็บอย่างดี มาพร้อมกับตะขอเกี่ยวซองใส่บัตร ไม่มีจำนวนขั้นต่ำในการสั่งซื้อ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 19,
+                    'product_id' => 19,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอพนักงานแบบไม่สกรีน ยาว 45cm(450mm) ขนาด 10mm สี 348C ตัวสายมีการตัดเย็บอย่างดี มาพร้อมกับตะขอเกี่ยวซองใส่บัตร ไม่มีจำนวนขั้นต่ำในการสั่งซื้อ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 20,
+                    'product_id' => 20,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องบัตรซิลิโคน แบบไม่สกรีนโลโก้พร้อมส่ง 1 เส้นก็สามารถสั่งซื้อได้ มาพร้อมกับตะขอเกี่ยวซองใส่บัตรและตัวคล้องโทรศัพท์ สายสามารถเช็ดล้างทำความสะอาดได้โดยไม่เกิดความเสียหาย บิดงอได้สามารถคืนรูปได้ ไม่ฉีดขาดง่ายเหมือนซิลิโคนราคาถูก ใช้งานทนทาน',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 21,
+                    'product_id' => 21,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องบัตรซิลิโคน แบบไม่สกรีนโลโก้พร้อมส่ง 1 เส้นก็สามารถสั่งซื้อได้ มาพร้อมกับตะขอเกี่ยวซองใส่บัตรและตัวคล้องโทรศัพท์ สายสามารถเช็ดล้างทำความสะอาดได้โดยไม่เกิดความเสียหาย บิดงอได้สามารถคืนรูปได้ ไม่ฉีดขาดง่ายเหมือนซิลิโคนราคาถูก ใช้งานทนทาน',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 22,
+                    'product_id' => 22,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สายคล้องคอโทรศัพท์ คุณภาพมาตรฐาน HOT STRAP',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:02'
+                ],
+                [
+                    'id' => 23,
+                    'product_id' => 23,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => 2,
+                    'description' => 'สายคล้องมือถือ คุณภาพมาตรฐาน HOT STRAP',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-08-03 05:06:02'
+                ],
+                [
+                    'id' => 24,
+                    'product_id' => 24,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => 1,
+                    'description' => 'ซองใส่บัตรพนักงานแบบอ่อน (พลาสติก) ราคา 7 บาท แถมฟรีเมื่อสั่งซื้อสายคล้องบัตร 300 ชิ้นขึ้นไป',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 25,
+                    'product_id' => 25,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบอ่อน (พลาสติก) ราคา 7 บาท แถมฟรีเมื่อสั่งซื้อสายคล้องบัตร 300 ชิ้นขึ้นไป',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 26,
+                    'product_id' => 26,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบอ่อน (พลาสติก) ราคา 7 บาท แถมฟรีเมื่อสั่งซื้อสายคล้องบัตร 300 ชิ้นขึ้นไป',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 27,
+                    'product_id' => 27,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 28,
+                    'product_id' => 28,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 29,
+                    'product_id' => 29,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 30,
+                    'product_id' => 30,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 31,
+                    'product_id' => 31,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 32,
+                    'product_id' => 32,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 33,
+                    'product_id' => 33,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 34,
+                    'product_id' => 34,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 35,
+                    'product_id' => 35,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 36,
+                    'product_id' => 36,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 37,
+                    'product_id' => 37,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงาน PVC แบบอ่อนใช้สำหรับใส่บัตรพนักงานและเนมการ์ดต่างๆ',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 38,
+                    'product_id' => 38,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 39,
+                    'product_id' => 39,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 40,
+                    'product_id' => 40,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 41,
+                    'product_id' => 41,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 42,
+                    'product_id' => 42,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 43,
+                    'product_id' => 43,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 44,
+                    'product_id' => 44,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 45,
+                    'product_id' => 45,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 46,
+                    'product_id' => 46,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 47,
+                    'product_id' => 47,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 48,
+                    'product_id' => 48,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 49,
+                    'product_id' => 49,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 50,
+                    'product_id' => 50,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 51,
+                    'product_id' => 51,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบหนัง PU',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 52,
+                    'product_id' => 52,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 53,
+                    'product_id' => 53,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 54,
+                    'product_id' => 54,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 55,
+                    'product_id' => 55,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 56,
+                    'product_id' => 56,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 57,
+                    'product_id' => 57,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 58,
+                    'product_id' => 58,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 59,
+                    'product_id' => 59,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 60,
+                    'product_id' => 60,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 61,
+                    'product_id' => 61,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 62,
+                    'product_id' => 62,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'ซองใส่บัตรพนักงานแบบ Sliding Plastic',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 63,
+                    'product_id' => 63,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'กรอบใส่บัตรแบบแข็ง ขนาดเหมาะสำหรับบัตรประชาชนหรือนามบัตรขนาดมาตราฐาน แข็งแรงทนทาน ใช้งานได้นาน',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 64,
+                    'product_id' => 64,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'กรอบใส่บัตรแบบแข็ง ขนาดเหมาะสำหรับบัตรประชาชนหรือนามบัตรขนาดมาตราฐาน แข็งแรงทนทาน ใช้งานได้นาน',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 65,
+                    'product_id' => 65,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'กรอบใส่บัตรแบบแข็ง ขนาดเหมาะสำหรับบัตรประชาชนหรือนามบัตรขนาดมาตราฐาน แข็งแรงทนทาน ใช้งานได้นาน',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 66,
+                    'product_id' => 66,
+                    'product_type_id' => 2,
+                    'occasion_type_id' => null,
+                    'description' => 'กรอบใส่บัตรแบบแข็ง ขนาดเหมาะสำหรับบัตรประชาชนหรือนามบัตรขนาดมาตราฐาน แข็งแรงทนทาน ใช้งานได้นาน',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 67,
+                    'product_id' => 67,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => 1,
+                    'description' => 'พาร์ทโยโย่เหมาะสำหรับนำมาใช้กับบัตรพนักงาน หรือบัตร Security card นอกจากจะคล้องกับสายคล้องคอพนักงานได้แล้ว ยังสามารถนำมาติดกับกระเป๋าเสื้อได้อีกด้วย โยโย่หลากหลายสี ส่วนกลางของพาร์ทนั้นทำมาจากอีพ๊อกซี่ เรซิ่นสามารถสกีนโลโก้แบบซับลิเมชั่นลงไปได้ หรือจะไม่ใส่โลโก้ก็ได้เช่นกันและสามารถสั่งแยกจากเชือกก็สามารถทำได้ขั้นต่ำเพียง 50 ชิ้น',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 68,
+                    'product_id' => 68,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'พาร์ทโยโย่เหมาะสำหรับนำมาใช้กับบัตรพนักงาน หรือบัตร Security card นอกจากจะคล้องกับสายคล้องคอพนักงานได้แล้ว ยังสามารถนำมาติดกับกระเป๋าเสื้อได้อีกด้วย โยโย่หลากหลายสี ส่วนกลางของพาร์ทนั้นทำมาจากอีพ๊อกซี่ เรซิ่นสามารถสกีนโลโก้แบบซับลิเมชั่นลงไปได้ หรือจะไม่ใส่โลโก้ก็ได้เช่นกันและสามารถสั่งแยกจากเชือกก็สามารถทำได้ขั้นต่ำเพียง 50 ชิ้น',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 69,
+                    'product_id' => 69,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'สต๊อปเปอร์โยโ่ย่มีคุณสมบัติพิเศษคือสามารถกำหนดความยาวของเชือกที่ดึงออกมาได้ เมื่อดึงสายออกมาตามขนาดที่ต้องการแล้วให้กดปุ่มตรงกลาง สายก็จะคงอยู่ตามขนาดความยาวที่ลูกค้าต้องการ หากต้องการให้สายเข้าที่เดิม ให้กดปุ่มตรงการเพื่อปลดล๊อกสาย',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 70,
+                    'product_id' => 70,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 71,
+                    'product_id' => 71,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 72,
+                    'product_id' => 72,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 73,
+                    'product_id' => 73,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 74,
+                    'product_id' => 74,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 75,
+                    'product_id' => 75,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 76,
+                    'product_id' => 76,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 77,
+                    'product_id' => 77,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 78,
+                    'product_id' => 78,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 79,
+                    'product_id' => 79,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'โยโย่ติดซองใส่บัตร คาราบิเนอร์โยโย่มีให้เลือกถึง 10 สี สามารถเลือกพาร์ทคาราบิเนอร์แบบมีตะขอหลังหรือไม่มีก็ได้ สามารถเพิ่มส่วนหัวพาร์ทเป็นคลิปพลาสติกใส(ฟรี) ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 80,
+                    'product_id' => 80,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'คลิปพิเศษที่จะช่วยให้สายของคุณไม่บิดไปมา คงไว้ให้เห็นโลโก้และป้ายพนักงานได้ตลอดเวลา ตัวคลิปเป็นพลาสติกเนื้อดี มาพร้อมแกนโลหะ มีความแข็งแรงและทนทาน สามารถติดสติ๊กเกอร์โลโก้เรซิ่นได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 81,
+                    'product_id' => 81,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'คลิปพิเศษที่จะช่วยให้สายของคุณใช้งานได้ง่ายมากยิ่งขึ้น นอกจากเห็นโลโก้และป้ายพนักงาน ตัวคลิปยังสามารถยืดได้ถึง 33 cm. ใช้ในชีวิตประจำวันได้สะดวกยิ่งขึ้น มีความแข็งแรงและทนทาน อีกทั้งติดสติ๊กเกอร์โลโก้เรซิ่นได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 82,
+                    'product_id' => 82,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ใช้ห้อยบัตรพนักงาน, บัตร ID หรือบัตรต่างๆ เป็นตะขอที่ได้รับความนิยมเพราะสามารถกดเปิด-ปิดได้สะดวกด้วยมือเดียว',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 83,
+                    'product_id' => 83,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ใช้ห้อยบัตรพนักงาน, บัตร ID หรือบัตรต่างๆ เป็นตะขอที่ได้รับความนิยมเพราะสามารถกดเปิด-ปิดได้สะดวกด้วยมือเดียว',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 84,
+                    'product_id' => 84,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'บริเวณส่วนเปิด-ปิดต้องใช้มือดันเข้าไปเพื่อเปิดซึ่งจะไม่เหมือนกับตะขอสปริงที่จะมีส่วนที่ยื่นออกมาจากด้านข้างเพื่อให้กดเปิด',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 85,
+                    'product_id' => 85,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'บริเวณส่วนเปิด-ปิด จะคล้ายกับตะขอสปริงดีดทรงรี',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 86,
+                    'product_id' => 86,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'คลิปหนีบโลหะ มีความแข็งแรง สามารถนำไปหนีบกับซองใส่บัตรพนักงานแบบพลาสติกได้คลิปหนีบโลหะ มีความแข็งแรง สามารถนำไปหนีบกับซองใส่บัตรพนักงานแบบพลาสติกได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 87,
+                    'product_id' => 87,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'คลิปหนีบโลหะพร้อมตะขอพีวีซี เหมาะสำหรับนำไปคล้องกับซองใส่บัตรพนักงาน',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 88,
+                    'product_id' => 88,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้สามารถนำไปใช้สำหรับหนีบบัตรพนักงาน หรือ ID Card ได้โดยตรง หรือนำไปหนีบไว้ที่กระเป๋าเสื้อได้ด้วย',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 89,
+                    'product_id' => 89,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้สามารถใช้ห้อยบัตรพนักงาน บัตรID Card หรือบัตรต่างๆ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 90,
+                    'product_id' => 90,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตัวคลิปผลิตในประเทศญี่ปุ่น คุณภาพดีมาก ในส่วนของคลิปสามารถถอดแยกเพื่อนำไปหนีบกับกระเป๋าเสื้อ,กางเกงได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 91,
+                    'product_id' => 91,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตัวคลิปสามารถแยกออกจากห่วงโลหะได้เพื่อนำไปติดเข้ากับสายคล้องคอเพื่อใช้ห้อยบัตรต่างๆ จะนำมาใช้ห้อยบัตร ID หรือบัตรพนักงานไว้ที่กระเป๋าเสื้อหรือบริเวณอื่นก็ได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 92,
+                    'product_id' => 92,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'คลิปพลาสติกเนื้อดี แกนโลหะ มีความแข็งแรงและทนทาน ส่วนปลายคลิปวัสดุเป็นยางอ่อน มีความยืดหยุ่นสูงทำให้ใช้งานได้ยาวนาน',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 93,
+                    'product_id' => 93,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'เป็นคลิปยูโรที่ผลิตจากเรซิ่นทั้งหมด ไม่มีโลหะ สามารถถอดแยกออกจากสายคล้องคอได้(ผลิตในประเทศญี่ปุ่น)',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 94,
+                    'product_id' => 94,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'คลิปพลาสติกเนื้อดี แกนโลหะ มีความแข็งแรงและทนทาน สามารถติดสติ๊กเกอร์โลโก้เรซิ่นได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 95,
+                    'product_id' => 95,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'คลิปพลาสติกเนื้อดี แกนโลหะ มีความแข็งแรงและทนทาน สามารถติดสติ๊กเกอร์โลโก้เรซิ่นได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 96,
+                    'product_id' => 96,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนที่แข็งแรงนี้จะช่วยป้องกันให้สายคล้องคอหลุดออกจากคอยากขึ้น จุดที่สามารถติดตั้ง Safety part ได้หรือคลิกที่นี่เพื่อดูวิดิโอสาธิตการใช้งาน',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 97,
+                    'product_id' => 97,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนสำหรับห้อยโทรศัพท์มือถือ หรืออุปกรณ์ต่างๆ สามารถแยกออกจากกันได้ มีให้เลือก2สี คือ สีขาว และสีดำ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 98,
+                    'product_id' => 98,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้นำไปติดเข้ากับสายคล้องคอ แล้วยังสามารถแยกออกจากกันได้อีกด้วย ในส่วนที่เป็นเชือกยังสามารถห้อยโทรศัพท์มือถือ หรืออุปกรณ์ต่างๆได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 99,
+                    'product_id' => 99,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้นำไปติดเข้ากับสายคล้องคอ ส่วนทีเป็นสายห้อยโทรศัพท์มือถือจะยึดติดแน่นกับส่วนพลาสติกซึ่งมีความ แข็งแรงจึงสามารถนำไปใช้ห้อยโทรศัพท์มือถือ หรืออุปกรณ์ต่างๆได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 100,
+                    'product_id' => 100,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้มีน้ำหนักเบา ใช้งานง่ายกว่าชิ้นส่วนที่เป็นโลหะ เหมาะกับสายคล้องคอสำหรับเด็ก',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 101,
+                    'product_id' => 101,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้นำไปติดเข้ากับสายคล้องคอ และสามารถถอดออกได้โดยกดตรงด้านข้างของตัวล็อคก้ามปูแล้วดึงออก',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 102,
+                    'product_id' => 102,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้เป็นโลหะรูปทรงสี่เหลี่ยมผืนผ้าที่นำไปติดเข้ากับสายคล้องคอ เพื่อพับส่วนปลายเก็บที่ด้านหลังแทนการเย็บ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 103,
+                    'product_id' => 103,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้เป็นพลาสติกทรงกลมเพื่อปิดรอยเย็บ สกรีนโลโก้บริษัท ตรา สัญลักษณ์ต่างๆได้ กรณีนำสายคล้องคอไปซัก สามารถถอดโลโก้ด้านบนออกได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 104,
+                    'product_id' => 104,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้จะใช้สำหรับปรับระดับความสั้น ความยาวของสายคล้องคอได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 105,
+                    'product_id' => 105,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้จะอยู่บริเวณคอ สามารถใช้เลื่อนเพื่อปรับระดับความยาวของสายคล้องคอได้ตามต้องการ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 106,
+                    'product_id' => 106,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้เป็นพลาสติกทรงกลมใช้เพื่อปรับระดับความยาวสายโดยการเลื่อนเข้าหรือออก จะช่วยให้ได้ขนาดสายคล้องคอที่พอดีกับที่ต้องการ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 107,
+                    'product_id' => 107,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนนี้เป็นอลูมิเนียม สำหรับสายคล้องคอ 20mm ใช้เพื่อคล้องหรือแขวนขวดน้ำไว้กับตัวสายคล้องคอ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 108,
+                    'product_id' => 108,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนสำหรับติดคล้องกับขวดน้ำจะเป็นยาง มาพร้อมกับห่วงแบบวงกลมเกี่ยวกับสายคล้องคอ ใช้เพื่อคล้องหรือแขวนขวดน้ำกับสายคล้องคอ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 109,
+                    'product_id' => 109,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนสำหรับติดคล้องกับขวดน้ำจะเป็นยาง มาพร้อมกับห่วงแบบวงกลมเกี่ยวกับสายคล้องคอ ใช้เพื่อคล้องหรือแขวนขวดน้ำกับสายคล้องคอ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 110,
+                    'product_id' => 110,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ชิ้นส่วนสำหรับติดคล้องกับขวดน้ำจะเป็นยางรูปวงกลม ซึ่งจะติดมาพร้อมกับตัวสายคล้องคอ ใช้สำหรับคล้องหรือแขวนขวดน้ำกับสายคล้องคอ',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 111,
+                    'product_id' => 111,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'เหมาะสำหรับใส่ขวดสเปรย์ หรือสเปรย์ฆ่าเชื้อโรค และสามารถทำแบบใส่สองหัวได้ด้วย สามารถสกรีนโลโก้ที่มองเห็นแบบหน้าตรง เมื่อนำมาคล้องคอได้ด้วย ออร์เดอร์ 1ชิ้น ก็สามารถทำได้',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 112,
+                    'product_id' => 112,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => 2,
+                    'description' => 'ตะขอเกี่ยวอเนกประสงค์สามารถนำไปใช้งานกับเชือก และอุปกรณ์อื่นๆ นำมาประดับเป็นพวงกุญแจสำหรับของสัมนาคุณในงานอิเว้นท์ต่างๆ หรือในงานแข่งขันกีฬา สามารถคล้องกับสายคล้องคอ หรือผลิตแบบติดเชือกขนาดสั้นได้ เป็นต้น มีน้ำหนักเบาเพียง 10 กรัมและสามารถรับน้ำหนักได้ถึง 70 กิโลกรัม',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 113,
+                    'product_id' => 113,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตะขอเกี่ยวอเนกประสงค์สามารถนำไปใช้งานกับเชือก และอุปกรณ์อื่นๆ นำมาประดับเป็นพวงกุญแจสำหรับของสัมนาคุณในงานอิเว้นท์ต่างๆ หรือในงานแข่งขันกีฬา สามารถคล้องกับสายคล้องคอ หรือผลิตแบบติดเชือกขนาดสั้นได้ เป็นต้น มีน้ำหนักเบาเพียง 10 กรัมและสามารถรับน้ำหนักได้ถึง 70 กิโลกรัม',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 114,
+                    'product_id' => 114,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตะขอเกี่ยวอเนกประสงค์สามารถนำไปใช้งานกับเชือก และอุปกรณ์อื่นๆ นำมาประดับเป็นพวงกุญแจสำหรับของสัมนาคุณในงานอิเว้นท์ต่างๆ หรือในงานแข่งขันกีฬา สามารถคล้องกับสายคล้องคอ หรือผลิตแบบติดเชือกขนาดสั้นได้ เป็นต้น มีน้ำหนักเบาเพียง 10 กรัมและสามารถรับน้ำหนักได้ถึง 70 กิโลกรัม',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 115,
+                    'product_id' => 115,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตะขอเกี่ยวอเนกประสงค์สามารถนำไปใช้งานกับเชือก และอุปกรณ์อื่นๆ นำมาประดับเป็นพวงกุญแจสำหรับของสัมนาคุณในงานอิเว้นท์ต่างๆ หรือในงานแข่งขันกีฬา สามารถคล้องกับสายคล้องคอ หรือผลิตแบบติดเชือกขนาดสั้นได้ เป็นต้น มีน้ำหนักเบาเพียง 10 กรัมและสามารถรับน้ำหนักได้ถึง 70 กิโลกรัม',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 116,
+                    'product_id' => 116,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตะขอเกี่ยวอเนกประสงค์สามารถนำไปใช้งานกับเชือก และอุปกรณ์อื่นๆ นำมาประดับเป็นพวงกุญแจสำหรับของสัมนาคุณในงานอิเว้นท์ต่างๆ หรือในงานแข่งขันกีฬา สามารถคล้องกับสายคล้องคอ หรือผลิตแบบติดเชือกขนาดสั้นได้ เป็นต้น มีน้ำหนักเบาเพียง 10 กรัมและสามารถรับน้ำหนักได้ถึง 70 กิโลกรัม',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 117,
+                    'product_id' => 117,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตะขอเกี่ยวอเนกประสงค์สามารถนำไปใช้งานกับเชือก และอุปกรณ์อื่นๆ นำมาประดับเป็นพวงกุญแจสำหรับของสัมนาคุณในงานอิเว้นท์ต่างๆ หรือในงานแข่งขันกีฬา สามารถคล้องกับสายคล้องคอ หรือผลิตแบบติดเชือกขนาดสั้นได้ เป็นต้น มีน้ำหนักเบาเพียง 10 กรัมและสามารถรับน้ำหนักได้ถึง 70 กิโลกรัม',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 118,
+                    'product_id' => 118,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'กล้ามปูB_1 อะไหล่สายคล้องคอ HOT STRAP',
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 119,
+                    'product_id' => 119,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตัวเลื่อนปรับความยาว แบบ C อะไหล่สายคล้องคอ HOT STRAP',
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ],
+                [
+                    'id' => 120,
+                    'product_id' => 120,
+                    'product_type_id' => 3,
+                    'occasion_type_id' => null,
+                    'description' => 'ตัวเลื่อนปรับความยาว แบบ E อะไหล่สายคล้องคอ HOT STRAP',
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-08-03 05:06:52'
+                ]
+            ]
+        );
+
+        DB::table('product_variants')->insert(
+[
+                [
+                    'id' => 1,
+                    'product_id' => 1,
+                    'sku' => 'prod-1-1-123',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 2,
+                    'product_id' => 2,
+                    'sku' => 'prod-2-2-180',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 3,
+                    'product_id' => 3,
+                    'sku' => 'prod-3-3-702',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 4,
+                    'product_id' => 4,
+                    'sku' => 'prod-4-4-701',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 5,
+                    'product_id' => 5,
+                    'sku' => 'prod-5-5-937',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 6,
+                    'product_id' => 6,
+                    'sku' => 'prod-6-6-662',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 7,
+                    'product_id' => 7,
+                    'sku' => 'prod-7-7-536',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 8,
+                    'product_id' => 8,
+                    'sku' => 'prod-8-8-812',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 9,
+                    'product_id' => 9,
+                    'sku' => 'prod-9-9-296',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 10,
+                    'product_id' => 10,
+                    'sku' => 'prod-10-10-719',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 11,
+                    'product_id' => 11,
+                    'sku' => 'snap-yoyo-11-764',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 12,
+                    'product_id' => 12,
+                    'sku' => 'prod-12-12-652',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 13,
+                    'product_id' => 13,
+                    'sku' => 'prod-13-13-170',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 14,
+                    'product_id' => 14,
+                    'sku' => 'pu-14-190',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 15,
+                    'product_id' => 15,
+                    'sku' => 'prod-15-15-478',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => '{"รูปแบบสกรีน": ["สกรีนด้านเดียว 1 สี", "สกรีนด้านเดียว 2 สี", "สกรีน 2 ด้าน", "พิมพ์ระบบฟูลคัลเลอร์"], "ขนาดความกว้างสาย": ["10mm (มาตรฐาน)", "15mm", "20mm"], "ระบุรหัสสีสาย (Pantone / Name)": "text", "หัวคลิปหนีบ / อุปกรณ์": ["คลิปดำ STD", "ก้ามปูเหล็ก", "ห่วงเซฟตี้ต้านไวรัส", "กิ๊บปรับระดับ"]}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 09:54:30'
+                ],
+                [
+                    'id' => 16,
+                    'product_id' => 16,
+                    'sku' => 'flag-red10mm-16-614',
+                    'product_size' => '10mm',
+                    'product_color' => 'Flag red',
+                    'product_material' => 'ผ้าโพลีเอสเตอร์',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Flag red", "ขนาด": "10mm", "วัสดุ": "ผ้าโพลีเอสเตอร์"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 17,
+                    'product_id' => 17,
+                    'sku' => '293c10mm-17-547',
+                    'product_size' => '10mm',
+                    'product_color' => '293C',
+                    'product_material' => 'ผ้าโพลีเอสเตอร์',
+                    'stock_qty' => 0,
+                    'specs' => '{"สี": "293C", "ขนาด": "10mm", "วัสดุ": "ผ้าโพลีเอสเตอร์"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 18,
+                    'product_id' => 18,
+                    'sku' => 'black10mm-18-811',
+                    'product_size' => '10mm',
+                    'product_color' => 'Black',
+                    'product_material' => 'ผ้าโพลีเอสเตอร์',
+                    'stock_qty' => 0,
+                    'specs' => '{"สี": "Black", "ขนาด": "10mm", "วัสดุ": "ผ้าโพลีเอสเตอร์"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 19,
+                    'product_id' => 19,
+                    'sku' => '348c10mm-19-365',
+                    'product_size' => '10mm',
+                    'product_color' => '348C',
+                    'product_material' => 'ผ้าโพลีเอสเตอร์',
+                    'stock_qty' => 0,
+                    'specs' => '{"สี": "348C", "ขนาด": "10mm", "วัสดุ": "ผ้าโพลีเอสเตอร์"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 20,
+                    'product_id' => 20,
+                    'sku' => '10mm-20-812',
+                    'product_size' => '10mm',
+                    'product_color' => 'น้ำเงิน',
+                    'product_material' => 'ซิลิโคน',
+                    'stock_qty' => 0,
+                    'specs' => '{"สี": "น้ำเงิน", "ขนาด": "10mm", "วัสดุ": "ซิลิโคน"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 21,
+                    'product_id' => 21,
+                    'sku' => '10mm-21-468',
+                    'product_size' => '10mm',
+                    'product_color' => 'ชมพู',
+                    'product_material' => 'ซิลิโคน',
+                    'stock_qty' => 0,
+                    'specs' => '{"สี": "ชมพู", "ขนาด": "10mm", "วัสดุ": "ซิลิโคน"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 22,
+                    'product_id' => 22,
+                    'sku' => 'prod-22-22-285',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 23,
+                    'product_id' => 23,
+                    'sku' => 'prod-23-23-370',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 24,
+                    'product_id' => 24,
+                    'sku' => 'id-std-1-24-646',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "พลาสติก", "ประเภท": "ซองใส่บัตรพนักงานแบบอ่อน"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 25,
+                    'product_id' => 25,
+                    'sku' => 'id-std-2-25-892',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "พลาสติก", "ประเภท": "ซองใส่บัตรพนักงานแบบอ่อน"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 26,
+                    'product_id' => 26,
+                    'sku' => 'id-std-3-26-338',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "พลาสติก", "ประเภท": "ซองใส่บัตรพนักงานแบบอ่อน"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 27,
+                    'product_id' => 27,
+                    'sku' => 'id-1-npvc-27-495',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 28,
+                    'product_id' => 28,
+                    'sku' => 'id-1-nzpvc-28-139',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 29,
+                    'product_id' => 29,
+                    'sku' => 'id-2-npvc-29-705',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 30,
+                    'product_id' => 30,
+                    'sku' => 'id-3-npvc-30-151',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 31,
+                    'product_id' => 31,
+                    'sku' => 'id-4-npvc-31-502',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 32,
+                    'product_id' => 32,
+                    'sku' => 'id-4-nzpvc-32-783',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 33,
+                    'product_id' => 33,
+                    'sku' => 'id-5-nzpvc-33-917',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 34,
+                    'product_id' => 34,
+                    'sku' => 'id-6-npvc-34-519',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 35,
+                    'product_id' => 35,
+                    'sku' => 'id-6-nzpvc-35-334',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 36,
+                    'product_id' => 36,
+                    'sku' => 'id-8-npvc-36-364',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 37,
+                    'product_id' => 37,
+                    'sku' => 'id-9-npvc-37-185',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'ไวนิล(หนา: 0.25mm)',
+                    'stock_qty' => 11,
+                    'specs' => '{"วัสดุ": "ไวนิล(หนา: 0.25mm)", "รูกลาง": "กว้าง 14mm สูง 4.5mm", "รูปแบบ": "ซองใส่บัตรแนวนอน เคสแบบอ่อน", "ขนาดซอง": "87mm x 100mm", "ขนาดบัตร": "64mm x 92mm", "รูซ้าย-ขวา": "เส้นผ่านศูนย์กลาง 4.5mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 38,
+                    'product_id' => 38,
+                    'sku' => 'id-pu-black-38-485',
+                    'product_size' => null,
+                    'product_color' => 'Black',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Black", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 39,
+                    'product_id' => 39,
+                    'sku' => 'id-pu-white-39-975',
+                    'product_size' => null,
+                    'product_color' => 'White',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "White", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 40,
+                    'product_id' => 40,
+                    'sku' => 'id-pu-gray-40-598',
+                    'product_size' => null,
+                    'product_color' => 'Gray',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Gray", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 41,
+                    'product_id' => 41,
+                    'sku' => 'id-pu-blue-41-349',
+                    'product_size' => null,
+                    'product_color' => 'Blue',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Blue", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 42,
+                    'product_id' => 42,
+                    'sku' => 'id-pu-skyblue-42-957',
+                    'product_size' => null,
+                    'product_color' => 'Skyblue',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Skyblue", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 43,
+                    'product_id' => 43,
+                    'sku' => 'id-pu-brown-43-629',
+                    'product_size' => null,
+                    'product_color' => 'Brown',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Brown", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 44,
+                    'product_id' => 44,
+                    'sku' => 'id-pu-cream-44-954',
+                    'product_size' => null,
+                    'product_color' => 'Cream',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Cream", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 45,
+                    'product_id' => 45,
+                    'sku' => 'id-pu-green-45-469',
+                    'product_size' => null,
+                    'product_color' => 'Green',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Green", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 46,
+                    'product_id' => 46,
+                    'sku' => 'id-pu-lightgreen-46-904',
+                    'product_size' => null,
+                    'product_color' => 'Lightgreen',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Lightgreen", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 47,
+                    'product_id' => 47,
+                    'sku' => 'id-pu-navy-47-427',
+                    'product_size' => null,
+                    'product_color' => 'Navy',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Navy", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 48,
+                    'product_id' => 48,
+                    'sku' => 'id-pu-orange-48-524',
+                    'product_size' => null,
+                    'product_color' => 'Orange',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Orange", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 49,
+                    'product_id' => 49,
+                    'sku' => 'id-pu-pink-49-829',
+                    'product_size' => null,
+                    'product_color' => 'Pink',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Pink", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 50,
+                    'product_id' => 50,
+                    'sku' => 'id-pu-red-50-387',
+                    'product_size' => null,
+                    'product_color' => 'Red',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Red", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 51,
+                    'product_id' => 51,
+                    'sku' => 'id-pu-yellow-51-692',
+                    'product_size' => null,
+                    'product_color' => 'Yellow',
+                    'product_material' => 'หนัง PU',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Yellow", "วัสดุ": "หนัง PU", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 70mm", "ขนาดนามบัตร": "90mm x 55mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 52,
+                    'product_id' => 52,
+                    'sku' => 'id-card-sliding-plastic-pp-green-52-834',
+                    'product_size' => null,
+                    'product_color' => 'Green',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Green", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 53,
+                    'product_id' => 53,
+                    'sku' => 'id-card-sliding-plastic-pp-blue-gray-53-792',
+                    'product_size' => null,
+                    'product_color' => 'Blue Gray',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Blue Gray", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 54,
+                    'product_id' => 54,
+                    'sku' => 'id-card-sliding-plastic-pp-white-54-352',
+                    'product_size' => null,
+                    'product_color' => 'White',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "White", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 55,
+                    'product_id' => 55,
+                    'sku' => 'id-card-sliding-plastic-pp-red-55-156',
+                    'product_size' => null,
+                    'product_color' => 'Red',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Red", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 56,
+                    'product_id' => 56,
+                    'sku' => 'id-card-sliding-plastic-pp-gray-56-236',
+                    'product_size' => null,
+                    'product_color' => 'Gray',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Gray", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 57,
+                    'product_id' => 57,
+                    'sku' => 'id-card-sliding-plastic-pp-yellow-57-718',
+                    'product_size' => null,
+                    'product_color' => 'Yellow',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Yellow", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 58,
+                    'product_id' => 58,
+                    'sku' => 'id-card-sliding-plastic-pp-blue-58-574',
+                    'product_size' => null,
+                    'product_color' => 'Blue',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Blue", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 59,
+                    'product_id' => 59,
+                    'sku' => 'id-card-sliding-plastic-pp-orange-59-230',
+                    'product_size' => null,
+                    'product_color' => 'Orange',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Orange", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 60,
+                    'product_id' => 60,
+                    'sku' => 'id-card-sliding-plastic-pp-pink-60-608',
+                    'product_size' => null,
+                    'product_color' => 'Pink',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Pink", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 61,
+                    'product_id' => 61,
+                    'sku' => 'id-card-sliding-plastic-pp-sky-blue-61-922',
+                    'product_size' => null,
+                    'product_color' => 'Sky Blue',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Sky Blue", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 62,
+                    'product_id' => 62,
+                    'sku' => 'id-card-sliding-plastic-pp-black-62-274',
+                    'product_size' => null,
+                    'product_color' => 'Black',
+                    'product_material' => 'Plastic PP',
+                    'stock_qty' => 11,
+                    'specs' => '{"สี": "Black", "วัสดุ": "Plastic PP", "รูปแบบ": "ซองใส่บัตรแนวตั้ง", "ขนาดรอบนอก": "110mm x 69mm", "ขนาดนามบัตร": "85mm x 54mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 63,
+                    'product_id' => 63,
+                    'sku' => 'f001-63-358',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'กรอบแข็ง',
+                    'stock_qty' => 200,
+                    'specs' => '{"วัสดุ": "กรอบแข็ง", "ประเภท": "เคสแบบกรอบแข็ง", "รูปแบบ": "ใส่นามบัตรแนวตั้ง", "ขนาดแนวนอน": "54mm", "ขนาดแนวตั้ง": "86mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 64,
+                    'product_id' => 64,
+                    'sku' => 'f002-64-901',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'กรอบแข็ง',
+                    'stock_qty' => 200,
+                    'specs' => '{"วัสดุ": "กรอบแข็ง", "ประเภท": "เคสแบบกรอบแข็ง", "รูปแบบ": "ใส่นามบัตรแนวตั้ง", "ขนาดแนวนอน": "54mm", "ขนาดแนวตั้ง": "86mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 65,
+                    'product_id' => 65,
+                    'sku' => 'f003-65-960',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'กรอบแข็ง',
+                    'stock_qty' => 200,
+                    'specs' => '{"วัสดุ": "กรอบแข็ง", "ประเภท": "เคสแบบกรอบแข็ง", "รูปแบบ": "ใส่นามบัตรแนวตั้ง", "ขนาดแนวนอน": "54mm", "ขนาดแนวตั้ง": "86mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 66,
+                    'product_id' => 66,
+                    'sku' => 'f004-66-874',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => 'กรอบแข็ง',
+                    'stock_qty' => 200,
+                    'specs' => '{"วัสดุ": "กรอบแข็ง", "ประเภท": "เคสแบบกรอบแข็ง", "รูปแบบ": "ใส่นามบัตรแนวตั้ง", "ขนาดแนวนอน": "54mm", "ขนาดแนวตั้ง": "86mm"}',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 67,
+                    'product_id' => 67,
+                    'sku' => 'prod-67-67-558',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 500,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 68,
+                    'product_id' => 68,
+                    'sku' => 'prod-68-68-394',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 500,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 69,
+                    'product_id' => 69,
+                    'sku' => 'prod-69-69-949',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 70,
+                    'product_id' => 70,
+                    'sku' => 'prod-70-70-300',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 71,
+                    'product_id' => 71,
+                    'sku' => 'prod-71-71-112',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 72,
+                    'product_id' => 72,
+                    'sku' => 'prod-72-72-691',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 73,
+                    'product_id' => 73,
+                    'sku' => 'prod-73-73-474',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 74,
+                    'product_id' => 74,
+                    'sku' => 'prod-74-74-631',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 75,
+                    'product_id' => 75,
+                    'sku' => 'prod-75-75-927',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 76,
+                    'product_id' => 76,
+                    'sku' => 'prod-76-76-648',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 77,
+                    'product_id' => 77,
+                    'sku' => 'prod-77-77-407',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 78,
+                    'product_id' => 78,
+                    'sku' => 'prod-78-78-848',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 79,
+                    'product_id' => 79,
+                    'sku' => 'prod-79-79-306',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 80,
+                    'product_id' => 80,
+                    'sku' => 'front-keeper-80-767',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 81,
+                    'product_id' => 81,
+                    'sku' => 'snap-yoyo-81-173',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 82,
+                    'product_id' => 82,
+                    'sku' => 'a-82-334',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 83,
+                    'product_id' => 83,
+                    'sku' => 'b-83-898',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 84,
+                    'product_id' => 84,
+                    'sku' => 'prod-84-84-662',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 85,
+                    'product_id' => 85,
+                    'sku' => 'prod-85-85-663',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 86,
+                    'product_id' => 86,
+                    'sku' => 'prod-86-86-473',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 87,
+                    'product_id' => 87,
+                    'sku' => 'prod-87-87-682',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 88,
+                    'product_id' => 88,
+                    'sku' => 'a-88-153',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 89,
+                    'product_id' => 89,
+                    'sku' => 'prod-89-89-568',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 90,
+                    'product_id' => 90,
+                    'sku' => 'a-90-536',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 91,
+                    'product_id' => 91,
+                    'sku' => 'b-91-163',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 92,
+                    'product_id' => 92,
+                    'sku' => 'c-92-633',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 93,
+                    'product_id' => 93,
+                    'sku' => 'prod-93-93-929',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 94,
+                    'product_id' => 94,
+                    'sku' => 'prod-94-94-636',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 95,
+                    'product_id' => 95,
+                    'sku' => 'prod-95-95-544',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 96,
+                    'product_id' => 96,
+                    'sku' => 'safety-part-96-799',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 97,
+                    'product_id' => 97,
+                    'sku' => 'prod-97-97-522',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 98,
+                    'product_id' => 98,
+                    'sku' => 'prod-98-98-423',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 99,
+                    'product_id' => 99,
+                    'sku' => 'prod-99-99-628',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 100,
+                    'product_id' => 100,
+                    'sku' => 'prod-100-100-237',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 101,
+                    'product_id' => 101,
+                    'sku' => 'prod-101-101-206',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 102,
+                    'product_id' => 102,
+                    'sku' => 'prod-102-102-890',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 103,
+                    'product_id' => 103,
+                    'sku' => 'prod-103-103-230',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 104,
+                    'product_id' => 104,
+                    'sku' => 'a-104-510',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 105,
+                    'product_id' => 105,
+                    'sku' => 'prod-105-105-752',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 106,
+                    'product_id' => 106,
+                    'sku' => 'a-106-800',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 107,
+                    'product_id' => 107,
+                    'sku' => 'b-107-309',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 108,
+                    'product_id' => 108,
+                    'sku' => 'prod-108-108-829',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 109,
+                    'product_id' => 109,
+                    'sku' => 'a-109-863',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 110,
+                    'product_id' => 110,
+                    'sku' => 'b-110-279',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 111,
+                    'product_id' => 111,
+                    'sku' => 'pet-holder-typec-111-430',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 112,
+                    'product_id' => 112,
+                    'sku' => 'ruby-red-112-429',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 113,
+                    'product_id' => 113,
+                    'sku' => 'black-113-683',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 114,
+                    'product_id' => 114,
+                    'sku' => 'silver-114-897',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 115,
+                    'product_id' => 115,
+                    'sku' => 'ruby-red-115-762',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 116,
+                    'product_id' => 116,
+                    'sku' => 'black-116-797',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 117,
+                    'product_id' => 117,
+                    'sku' => 'silver-117-246',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 0,
+                    'specs' => null,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 118,
+                    'product_id' => 118,
+                    'sku' => 'b-1-880-852',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ],
+                [
+                    'id' => 119,
+                    'product_id' => 119,
+                    'sku' => 'c-998-980',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ],
+                [
+                    'id' => 120,
+                    'product_id' => 120,
+                    'sku' => 'e-460-977',
+                    'product_size' => null,
+                    'product_color' => null,
+                    'product_material' => null,
+                    'stock_qty' => 5000,
+                    'specs' => null,
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ]
+            ]
+        );
+
+        DB::table('product_prices')->insert(
+[
+                [
+                    'id' => 1,
+                    'product_id' => 1,
+                    'min_qty' => 1,
+                    'price' => '50.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 2,
+                    'product_id' => 2,
+                    'min_qty' => 1,
+                    'price' => '29.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 3,
+                    'product_id' => 3,
+                    'min_qty' => 1,
+                    'price' => '47.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 4,
+                    'product_id' => 4,
+                    'min_qty' => 1,
+                    'price' => '36.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 5,
+                    'product_id' => 5,
+                    'min_qty' => 1,
+                    'price' => '29.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 6,
+                    'product_id' => 6,
+                    'min_qty' => 1,
+                    'price' => '60.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 7,
+                    'product_id' => 7,
+                    'min_qty' => 1,
+                    'price' => '59.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 8,
+                    'product_id' => 8,
+                    'min_qty' => 1,
+                    'price' => '32.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 9,
+                    'product_id' => 9,
+                    'min_qty' => 1,
+                    'price' => '43.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 10,
+                    'product_id' => 10,
+                    'min_qty' => 1,
+                    'price' => '35.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 11,
+                    'product_id' => 11,
+                    'min_qty' => 1,
+                    'price' => '51.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 12,
+                    'product_id' => 12,
+                    'min_qty' => 1,
+                    'price' => '46.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 13,
+                    'product_id' => 13,
+                    'min_qty' => 1,
+                    'price' => '45.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 14,
+                    'product_id' => 14,
+                    'min_qty' => 1,
+                    'price' => '48.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 15,
+                    'product_id' => 15,
+                    'min_qty' => 1,
+                    'price' => '35.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 16,
+                    'product_id' => 16,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 17,
+                    'product_id' => 17,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 18,
+                    'product_id' => 18,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 19,
+                    'product_id' => 19,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 20,
+                    'product_id' => 20,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 21,
+                    'product_id' => 21,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 22,
+                    'product_id' => 22,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 23,
+                    'product_id' => 23,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 24,
+                    'product_id' => 24,
+                    'min_qty' => 1,
+                    'price' => '7.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 25,
+                    'product_id' => 25,
+                    'min_qty' => 1,
+                    'price' => '7.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 26,
+                    'product_id' => 26,
+                    'min_qty' => 1,
+                    'price' => '7.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 27,
+                    'product_id' => 27,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 28,
+                    'product_id' => 27,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 29,
+                    'product_id' => 27,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 30,
+                    'product_id' => 28,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 31,
+                    'product_id' => 28,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 32,
+                    'product_id' => 28,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 33,
+                    'product_id' => 29,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 34,
+                    'product_id' => 29,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 35,
+                    'product_id' => 29,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 36,
+                    'product_id' => 30,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 37,
+                    'product_id' => 30,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 38,
+                    'product_id' => 30,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 39,
+                    'product_id' => 31,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 40,
+                    'product_id' => 31,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 41,
+                    'product_id' => 31,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 42,
+                    'product_id' => 32,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 43,
+                    'product_id' => 32,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 44,
+                    'product_id' => 32,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 45,
+                    'product_id' => 33,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 46,
+                    'product_id' => 33,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 47,
+                    'product_id' => 33,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 48,
+                    'product_id' => 34,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 49,
+                    'product_id' => 34,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 50,
+                    'product_id' => 34,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 51,
+                    'product_id' => 35,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 52,
+                    'product_id' => 35,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 53,
+                    'product_id' => 35,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 54,
+                    'product_id' => 36,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 55,
+                    'product_id' => 36,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 56,
+                    'product_id' => 36,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 57,
+                    'product_id' => 37,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 58,
+                    'product_id' => 37,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 59,
+                    'product_id' => 37,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 60,
+                    'product_id' => 38,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 61,
+                    'product_id' => 38,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 62,
+                    'product_id' => 38,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 63,
+                    'product_id' => 39,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 64,
+                    'product_id' => 39,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 65,
+                    'product_id' => 39,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 66,
+                    'product_id' => 40,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 67,
+                    'product_id' => 40,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 68,
+                    'product_id' => 40,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 69,
+                    'product_id' => 41,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 70,
+                    'product_id' => 41,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 71,
+                    'product_id' => 41,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 72,
+                    'product_id' => 42,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 73,
+                    'product_id' => 42,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 74,
+                    'product_id' => 42,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 75,
+                    'product_id' => 43,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 76,
+                    'product_id' => 43,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 77,
+                    'product_id' => 43,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 78,
+                    'product_id' => 44,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 79,
+                    'product_id' => 44,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 80,
+                    'product_id' => 44,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 81,
+                    'product_id' => 45,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 82,
+                    'product_id' => 45,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 83,
+                    'product_id' => 45,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 84,
+                    'product_id' => 46,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 85,
+                    'product_id' => 46,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 86,
+                    'product_id' => 46,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 87,
+                    'product_id' => 47,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 88,
+                    'product_id' => 47,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 89,
+                    'product_id' => 47,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 90,
+                    'product_id' => 48,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 91,
+                    'product_id' => 48,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 92,
+                    'product_id' => 48,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 93,
+                    'product_id' => 49,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 94,
+                    'product_id' => 49,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 95,
+                    'product_id' => 49,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 96,
+                    'product_id' => 50,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 97,
+                    'product_id' => 50,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 98,
+                    'product_id' => 50,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 99,
+                    'product_id' => 51,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 100,
+                    'product_id' => 51,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 101,
+                    'product_id' => 51,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 102,
+                    'product_id' => 52,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 103,
+                    'product_id' => 52,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 104,
+                    'product_id' => 52,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 105,
+                    'product_id' => 53,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 106,
+                    'product_id' => 53,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 107,
+                    'product_id' => 53,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 108,
+                    'product_id' => 54,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 109,
+                    'product_id' => 54,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 110,
+                    'product_id' => 54,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 111,
+                    'product_id' => 55,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 112,
+                    'product_id' => 55,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 113,
+                    'product_id' => 55,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 114,
+                    'product_id' => 56,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 115,
+                    'product_id' => 56,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 116,
+                    'product_id' => 56,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 117,
+                    'product_id' => 57,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 118,
+                    'product_id' => 57,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 119,
+                    'product_id' => 57,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 120,
+                    'product_id' => 58,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 121,
+                    'product_id' => 58,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 122,
+                    'product_id' => 58,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 123,
+                    'product_id' => 59,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 124,
+                    'product_id' => 59,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 125,
+                    'product_id' => 59,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 126,
+                    'product_id' => 60,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 127,
+                    'product_id' => 60,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 128,
+                    'product_id' => 60,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 129,
+                    'product_id' => 61,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 130,
+                    'product_id' => 61,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 131,
+                    'product_id' => 61,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 132,
+                    'product_id' => 62,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 133,
+                    'product_id' => 62,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 134,
+                    'product_id' => 62,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 135,
+                    'product_id' => 63,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 136,
+                    'product_id' => 63,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 137,
+                    'product_id' => 63,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 138,
+                    'product_id' => 64,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 139,
+                    'product_id' => 64,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 140,
+                    'product_id' => 64,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 141,
+                    'product_id' => 65,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 142,
+                    'product_id' => 65,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 143,
+                    'product_id' => 65,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 144,
+                    'product_id' => 66,
+                    'min_qty' => 1,
+                    'price' => '30.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 145,
+                    'product_id' => 66,
+                    'min_qty' => 100,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 146,
+                    'product_id' => 66,
+                    'min_qty' => 1000,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 147,
+                    'product_id' => 67,
+                    'min_qty' => 1,
+                    'price' => '29.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 148,
+                    'product_id' => 68,
+                    'min_qty' => 1,
+                    'price' => '19.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 149,
+                    'product_id' => 69,
+                    'min_qty' => 1,
+                    'price' => '45.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 150,
+                    'product_id' => 70,
+                    'min_qty' => 1,
+                    'price' => '25.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 151,
+                    'product_id' => 71,
+                    'min_qty' => 1,
+                    'price' => '36.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 152,
+                    'product_id' => 72,
+                    'min_qty' => 1,
+                    'price' => '35.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 153,
+                    'product_id' => 73,
+                    'min_qty' => 1,
+                    'price' => '21.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 154,
+                    'product_id' => 74,
+                    'min_qty' => 1,
+                    'price' => '43.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 155,
+                    'product_id' => 75,
+                    'min_qty' => 1,
+                    'price' => '41.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 156,
+                    'product_id' => 76,
+                    'min_qty' => 1,
+                    'price' => '37.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 157,
+                    'product_id' => 77,
+                    'min_qty' => 1,
+                    'price' => '26.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 158,
+                    'product_id' => 78,
+                    'min_qty' => 1,
+                    'price' => '44.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 159,
+                    'product_id' => 79,
+                    'min_qty' => 1,
+                    'price' => '45.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 160,
+                    'product_id' => 80,
+                    'min_qty' => 1,
+                    'price' => '13.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 161,
+                    'product_id' => 81,
+                    'min_qty' => 1,
+                    'price' => '9.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 162,
+                    'product_id' => 82,
+                    'min_qty' => 1,
+                    'price' => '7.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 163,
+                    'product_id' => 83,
+                    'min_qty' => 1,
+                    'price' => '8.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 164,
+                    'product_id' => 84,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 165,
+                    'product_id' => 85,
+                    'min_qty' => 1,
+                    'price' => '9.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 166,
+                    'product_id' => 86,
+                    'min_qty' => 1,
+                    'price' => '14.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 167,
+                    'product_id' => 87,
+                    'min_qty' => 1,
+                    'price' => '3.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 168,
+                    'product_id' => 88,
+                    'min_qty' => 1,
+                    'price' => '6.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 169,
+                    'product_id' => 89,
+                    'min_qty' => 1,
+                    'price' => '9.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 170,
+                    'product_id' => 90,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 171,
+                    'product_id' => 91,
+                    'min_qty' => 1,
+                    'price' => '12.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 172,
+                    'product_id' => 92,
+                    'min_qty' => 1,
+                    'price' => '3.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 173,
+                    'product_id' => 93,
+                    'min_qty' => 1,
+                    'price' => '4.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 174,
+                    'product_id' => 94,
+                    'min_qty' => 1,
+                    'price' => '9.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 175,
+                    'product_id' => 95,
+                    'min_qty' => 1,
+                    'price' => '8.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 176,
+                    'product_id' => 96,
+                    'min_qty' => 1,
+                    'price' => '12.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 177,
+                    'product_id' => 97,
+                    'min_qty' => 1,
+                    'price' => '6.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 178,
+                    'product_id' => 98,
+                    'min_qty' => 1,
+                    'price' => '5.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 179,
+                    'product_id' => 99,
+                    'min_qty' => 1,
+                    'price' => '9.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 180,
+                    'product_id' => 100,
+                    'min_qty' => 1,
+                    'price' => '8.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 181,
+                    'product_id' => 101,
+                    'min_qty' => 1,
+                    'price' => '15.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 182,
+                    'product_id' => 102,
+                    'min_qty' => 1,
+                    'price' => '4.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 183,
+                    'product_id' => 103,
+                    'min_qty' => 1,
+                    'price' => '11.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 184,
+                    'product_id' => 104,
+                    'min_qty' => 1,
+                    'price' => '14.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 185,
+                    'product_id' => 105,
+                    'min_qty' => 1,
+                    'price' => '7.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 186,
+                    'product_id' => 106,
+                    'min_qty' => 1,
+                    'price' => '7.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 187,
+                    'product_id' => 107,
+                    'min_qty' => 1,
+                    'price' => '14.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 188,
+                    'product_id' => 108,
+                    'min_qty' => 1,
+                    'price' => '3.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 189,
+                    'product_id' => 109,
+                    'min_qty' => 1,
+                    'price' => '5.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 190,
+                    'product_id' => 110,
+                    'min_qty' => 1,
+                    'price' => '14.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 191,
+                    'product_id' => 111,
+                    'min_qty' => 1,
+                    'price' => '10.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 192,
+                    'product_id' => 112,
+                    'min_qty' => 1,
+                    'price' => '20.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 193,
+                    'product_id' => 113,
+                    'min_qty' => 1,
+                    'price' => '24.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 194,
+                    'product_id' => 114,
+                    'min_qty' => 1,
+                    'price' => '12.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 195,
+                    'product_id' => 115,
+                    'min_qty' => 1,
+                    'price' => '14.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 196,
+                    'product_id' => 116,
+                    'min_qty' => 1,
+                    'price' => '21.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 197,
+                    'product_id' => 117,
+                    'min_qty' => 1,
+                    'price' => '23.00',
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 198,
+                    'product_id' => 118,
+                    'min_qty' => 1,
+                    'price' => '10.00',
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ],
+                [
+                    'id' => 199,
+                    'product_id' => 119,
+                    'min_qty' => 1,
+                    'price' => '10.00',
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ],
+                [
+                    'id' => 200,
+                    'product_id' => 120,
+                    'min_qty' => 1,
+                    'price' => '10.00',
+                    'created_at' => '2026-07-27 08:46:27',
+                    'updated_at' => '2026-07-27 08:46:27'
+                ]
+            ]
+        );
+
+        DB::table('product_images')->insert(
+[
+                [
+                    'id' => 1,
+                    'product_id' => 1,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-premium.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 2,
+                    'product_id' => 2,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-polyester.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 3,
+                    'product_id' => 3,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-nylon.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 4,
+                    'product_id' => 4,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-sublimation.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 5,
+                    'product_id' => 6,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-antibacterial.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 6,
+                    'product_id' => 7,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-jacquard.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 7,
+                    'product_id' => 9,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-snap-yoyo.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 8,
+                    'product_id' => 11,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-snap-yoyo.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 9,
+                    'product_id' => 12,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-resin-logo.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 10,
+                    'product_id' => 22,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/phone-lanyard-holder.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 11,
+                    'product_id' => 23,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/wristband-event.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 12,
+                    'product_id' => 24,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/acc-badge-holder.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 13,
+                    'product_id' => 25,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/acc-badge-holder.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 14,
+                    'product_id' => 26,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/acc-badge-holder.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:13',
+                    'updated_at' => '2026-07-24 08:36:13'
+                ],
+                [
+                    'id' => 15,
+                    'product_id' => 67,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/acc-yoyo.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 16,
+                    'product_id' => 68,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/acc-yoyo.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 17,
+                    'product_id' => 81,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/acc-parts.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 08:36:14',
+                    'updated_at' => '2026-07-24 08:36:14'
+                ],
+                [
+                    'id' => 21,
+                    'product_id' => 16,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/prod_16_image_1.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 09:25:19',
+                    'updated_at' => '2026-07-24 09:25:19'
+                ],
+                [
+                    'id' => 22,
+                    'product_id' => 16,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/prod_16_image_2.png',
+                    'is_primary' => 0,
+                    'created_at' => '2026-07-24 09:25:19',
+                    'updated_at' => '2026-07-24 09:25:19'
+                ],
+                [
+                    'id' => 23,
+                    'product_id' => 16,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/prod_16_image_3.png',
+                    'is_primary' => 0,
+                    'created_at' => '2026-07-24 09:25:19',
+                    'updated_at' => '2026-07-24 09:25:19'
+                ],
+                [
+                    'id' => 24,
+                    'product_id' => 17,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/prod_17_image_1.png',
+                    'is_primary' => 1,
+                    'created_at' => '2026-07-24 09:28:04',
+                    'updated_at' => '2026-07-24 09:28:04'
+                ],
+                [
+                    'id' => 25,
+                    'product_id' => 17,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/prod_17_image_2.png',
+                    'is_primary' => 0,
+                    'created_at' => '2026-07-24 09:28:04',
+                    'updated_at' => '2026-07-24 09:28:04'
+                ],
+                [
+                    'id' => 26,
+                    'product_id' => 17,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/prod_17_image_3.png',
+                    'is_primary' => 0,
+                    'created_at' => '2026-07-24 09:28:04',
+                    'updated_at' => '2026-07-24 09:28:04'
+                ],
+                [
+                    'id' => 27,
+                    'product_id' => 1,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-premium-2.jpg',
+                    'is_primary' => 0,
+                    'created_at' => '2026-08-03 04:16:25',
+                    'updated_at' => '2026-08-03 04:16:25'
+                ],
+                [
+                    'id' => 28,
+                    'product_id' => 1,
+                    'variant_id' => null,
+                    'image_path' => 'images/products/lanyard-premium-3.jpg',
+                    'is_primary' => 0,
+                    'created_at' => '2026-08-03 04:16:25',
+                    'updated_at' => '2026-08-03 04:16:25'
+                ],
+                [
+                    'id' => 29,
+                    'product_id' => 113,
+                    'variant_id' => null,
+                    'image_path' => 'images/carabiner-black.jpg',
+                    'is_primary' => 1,
+                    'created_at' => '2026-08-03 06:17:41',
+                    'updated_at' => '2026-08-03 06:17:41'
+                ],
+                [
+                    'id' => 30,
+                    'product_id' => 112,
+                    'variant_id' => null,
+                    'image_path' => 'images/carabiner-red.jpg',
+                    'is_primary' => 1,
+                    'created_at' => '2026-08-03 06:17:41',
+                    'updated_at' => '2026-08-03 06:17:41'
+                ],
+                [
+                    'id' => 31,
+                    'product_id' => 114,
+                    'variant_id' => null,
+                    'image_path' => 'images/carabiner-silver.jpg',
+                    'is_primary' => 1,
+                    'created_at' => '2026-08-03 06:17:41',
+                    'updated_at' => '2026-08-03 06:17:41'
+                ],
+                [
+                    'id' => 32,
+                    'product_id' => 117,
+                    'variant_id' => null,
+                    'image_path' => 'images/carabiner-matte-silver.jpg',
+                    'is_primary' => 1,
+                    'created_at' => '2026-08-03 06:30:08',
+                    'updated_at' => '2026-08-03 06:30:08'
+                ],
+                [
+                    'id' => 33,
+                    'product_id' => 115,
+                    'variant_id' => null,
+                    'image_path' => 'images/carabiner-matte-red.jpg',
+                    'is_primary' => 1,
+                    'created_at' => '2026-08-03 06:30:08',
+                    'updated_at' => '2026-08-03 06:30:08'
+                ],
+                [
+                    'id' => 34,
+                    'product_id' => 116,
+                    'variant_id' => null,
+                    'image_path' => 'images/carabiner-matte-black.jpg',
+                    'is_primary' => 1,
+                    'created_at' => '2026-08-03 06:30:08',
+                    'updated_at' => '2026-08-03 06:30:08'
+                ]
+            ]
+        );
+
+        DB::table('product_custom_configs')->insert(
+[
+                [
+                    'id' => 1,
+                    'product_id' => 1,
+                    'config_group' => 'premium',
+                    'available_sizes' => '["10mm", "15mm"]',
+                    'show_screen' => 1,
+                    'show_clip' => 1,
+                    'show_step2' => 1,
+                    'show_step3' => 1,
+                    'step2_mode' => 'swatches',
+                    'step3_mode' => 'swatches',
+                    'show_free_parts' => 0,
+                    'allowed_special_parts' => '["โทรศัพท์", "กระดุมเรซิ่น", "Safety", "เซฟตี้"]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ],
+                [
+                    'id' => 2,
+                    'product_id' => 8,
+                    'config_group' => 'premium',
+                    'available_sizes' => '["10mm", "15mm"]',
+                    'show_screen' => 1,
+                    'show_clip' => 1,
+                    'show_step2' => 1,
+                    'show_step3' => 1,
+                    'step2_mode' => 'swatches',
+                    'step3_mode' => 'swatches',
+                    'show_free_parts' => 0,
+                    'allowed_special_parts' => '["โทรศัพท์", "กระดุมเรซิ่น", "Safety", "เซฟตี้"]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ],
+                [
+                    'id' => 3,
+                    'product_id' => 2,
+                    'config_group' => 'poly_nylon',
+                    'available_sizes' => '["10mm", "15mm", "20mm"]',
+                    'show_screen' => 1,
+                    'show_clip' => 0,
+                    'show_step2' => 1,
+                    'show_step3' => 1,
+                    'step2_mode' => 'swatches',
+                    'step3_mode' => 'swatches',
+                    'show_free_parts' => 1,
+                    'allowed_special_parts' => '["เซฟตี้", "Safety", "โทรศัพท์", "กระดุมเรซิ่น", "ก้ามปู", "กล้ามปู", "ตัวเลื่อนปรับความยาว แบบ A", "ตัวเลื่อนปรับความยาว A", "ตัวเลื่อนปรับความยาวC", "ตัวเลื่อนปรับความยาว แบบ C", "หนีบ", "บอลกลม"]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ],
+                [
+                    'id' => 4,
+                    'product_id' => 3,
+                    'config_group' => 'poly_nylon',
+                    'available_sizes' => '["10mm", "15mm", "20mm"]',
+                    'show_screen' => 1,
+                    'show_clip' => 0,
+                    'show_step2' => 1,
+                    'show_step3' => 1,
+                    'step2_mode' => 'swatches',
+                    'step3_mode' => 'swatches',
+                    'show_free_parts' => 1,
+                    'allowed_special_parts' => '["เซฟตี้", "Safety", "โทรศัพท์", "กระดุมเรซิ่น", "ก้ามปู", "กล้ามปู", "ตัวเลื่อนปรับความยาว แบบ A", "ตัวเลื่อนปรับความยาว A", "ตัวเลื่อนปรับความยาวC", "ตัวเลื่อนปรับความยาว แบบ C", "หนีบ", "บอลกลม"]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ],
+                [
+                    'id' => 5,
+                    'product_id' => 4,
+                    'config_group' => 'sublimation',
+                    'available_sizes' => '["10mm", "15mm", "20mm", "25mm"]',
+                    'show_screen' => 1,
+                    'show_clip' => 0,
+                    'show_step2' => 0,
+                    'show_step3' => 1,
+                    'step2_mode' => null,
+                    'step3_mode' => 'swatches',
+                    'show_free_parts' => 1,
+                    'allowed_special_parts' => '["เซฟตี้", "Safety", "โทรศัพท์", "กระดุมเรซิ่น", "ก้ามปู", "กล้ามปู", "ตัวเลื่อนปรับความยาว แบบ A", "ตัวเลื่อนปรับความยาว A", "ตัวเลื่อนปรับความยาวC", "ตัวเลื่อนปรับความยาว แบบ C", "หนีบ", "บอลกลม"]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ],
+                [
+                    'id' => 6,
+                    'product_id' => 5,
+                    'config_group' => 'recycle',
+                    'available_sizes' => '["15mm", "20mm"]',
+                    'show_screen' => 0,
+                    'show_clip' => 0,
+                    'show_step2' => 0,
+                    'show_step3' => 0,
+                    'step2_mode' => null,
+                    'step3_mode' => null,
+                    'show_free_parts' => 1,
+                    'allowed_special_parts' => '["เซฟตี้", "Safety", "โทรศัพท์", "กระดุมเรซิ่น", "ก้ามปู", "กล้ามปู", "ตัวเลื่อนปรับความยาว แบบ A", "ตัวเลื่อนปรับความยาว A", "ตัวเลื่อนปรับความยาวC", "ตัวเลื่อนปรับความยาว แบบ C", "ตัวเลื่อนปรับความยาวE", "ตัวเลื่อนปรับความยาว แบบ E", "หนีบ", "บอลกลม"]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ],
+                [
+                    'id' => 7,
+                    'product_id' => 6,
+                    'config_group' => 'anti_bac',
+                    'available_sizes' => '["10mm", "15mm", "20mm", "25mm"]',
+                    'show_screen' => 0,
+                    'show_clip' => 0,
+                    'show_step2' => 0,
+                    'show_step3' => 0,
+                    'step2_mode' => null,
+                    'step3_mode' => null,
+                    'show_free_parts' => 1,
+                    'allowed_special_parts' => '["เซฟตี้", "Safety", "โทรศัพท์", "กระดุมเรซิ่น", "ก้ามปู", "กล้ามปู", "ตัวเลื่อนปรับความยาว แบบ A", "ตัวเลื่อนปรับความยาว A", "ตัวเลื่อนปรับความยาวC", "ตัวเลื่อนปรับความยาว แบบ C", "หนีบ", "บอลกลม"]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ],
+                [
+                    'id' => 8,
+                    'product_id' => 7,
+                    'config_group' => 'jacquard',
+                    'available_sizes' => '["15mm", "20mm"]',
+                    'show_screen' => 0,
+                    'show_clip' => 0,
+                    'show_step2' => 1,
+                    'show_step3' => 1,
+                    'step2_mode' => 'text',
+                    'step3_mode' => 'text',
+                    'show_free_parts' => 1,
+                    'allowed_special_parts' => '["เซฟตี้", "Safety", "โทรศัพท์", "กระดุมเรซิ่น", "ก้ามปู", "กล้ามปู", "ตัวเลื่อนปรับความยาว แบบ A", "ตัวเลื่อนปรับความยาว A", "ตัวเลื่อนปรับความยาวC", "ตัวเลื่อนปรับความยาว แบบ C", "ตัวเลื่อนปรับความยาวE", "ตัวเลื่อนปรับความยาว แบบ E", "หนีบ", "บอลกลม"]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ],
+                [
+                    'id' => 9,
+                    'product_id' => 9,
+                    'config_group' => 'yoyo',
+                    'available_sizes' => '["10mm", "15mm"]',
+                    'show_screen' => 1,
+                    'show_clip' => 0,
+                    'show_step2' => 1,
+                    'show_step3' => 1,
+                    'step2_mode' => 'swatches',
+                    'step3_mode' => 'swatches',
+                    'show_free_parts' => 1,
+                    'allowed_special_parts' => '[]',
+                    'free_part_ids' => null,
+                    'other_part_ids' => null,
+                    'special_part_ids' => null,
+                    'standard_colors' => null,
+                    'created_at' => '2026-08-03 02:53:29',
+                    'updated_at' => '2026-08-03 02:53:29'
+                ]
+            ]
+        );
+
+    }
+}
