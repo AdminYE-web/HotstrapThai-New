@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+    <rect width="400" height="300" fill="#f0f0f0"/>
+    <g fill="#777">
+        <!-- Frame border -->
+        <path d="M115,85 h170 v130 h-170 z m10,10 v110 h150 v-110 z" fill-rule="evenodd"/>
+        <!-- Sun -->
+        <circle cx="220" cy="125" r="14"/>
+        <!-- Mountains -->
+        <polygon points="125,205 165,155 205,190 235,160 275,205"/>
+    </g>
+</svg>
